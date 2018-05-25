@@ -22,9 +22,14 @@ public static class GameGlobal {
         }
     }
 
+    public static int enemiesOnTheScene = -1;
     public static int bitcoinsCurrency = 0;
     #endregion
 
+    public static void CountEnemies()
+    {
+        enemiesOnTheScene = GameObject.Find("Enemies").transform.childCount;
+    }
 
     public static void StartGame( GameObject miner, Transform parent, Vector3 minerPosition, Quaternion minerRotation )
     {
