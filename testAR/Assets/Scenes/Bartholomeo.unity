@@ -118,21 +118,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1087059437232034, guid: db295d43a30558c44a277f26c0b4ea3c,
     type: 2}
   m_PrefabInternal: {fileID: 453953398}
---- !u!114 &113794305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 113794304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147d7863546498d4583e37f8ebb01cc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: 2
-  NextMenu: {fileID: 0}
-  Menu: {fileID: 0}
-  NextScene: 
 --- !u!114 &113794306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +132,21 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+--- !u!114 &113794309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 113794304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 147d7863546498d4583e37f8ebb01cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
+  NextMenu: {fileID: 0}
+  Menu: {fileID: 0}
+  NextScene: 
 --- !u!1001 &161097728
 Prefab:
   m_ObjectHideFlags: 0
@@ -262,6 +262,10 @@ Prefab:
       propertyPath: NextMenu
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1145017456255248, guid: db295d43a30558c44a277f26c0b4ea3c, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db295d43a30558c44a277f26c0b4ea3c, type: 2}
   m_IsPrefabParent: 0
@@ -286,13 +290,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da721a1967c19ee41b20cdbff1f96059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugText: {fileID: 1924531815}
---- !u!114 &1924531815 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114421995445014624, guid: db295d43a30558c44a277f26c0b4ea3c,
-    type: 2}
-  m_PrefabInternal: {fileID: 453953398}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1962545930
 Prefab:
   m_ObjectHideFlags: 0
@@ -306,11 +303,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4442908887562770, guid: c10877f7cd5764de18d46d7b777d1faa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4442908887562770, guid: c10877f7cd5764de18d46d7b777d1faa, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4442908887562770, guid: c10877f7cd5764de18d46d7b777d1faa, type: 2}
       propertyPath: m_LocalRotation.x
