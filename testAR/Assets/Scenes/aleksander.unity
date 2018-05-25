@@ -272,6 +272,11 @@ Prefab:
       propertyPath: laserDamage
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114838641441486366, guid: e726aecebe30bb5438da6b69101e3478,
+        type: 2}
+      propertyPath: shotDuration
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e726aecebe30bb5438da6b69101e3478, type: 2}
   m_IsPrefabParent: 0
