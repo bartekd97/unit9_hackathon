@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BitcoinMiner : MonoBehaviour {
 
-    public float MinerTick = 0.5f; // co ile sekund ma dodac bitcoiny
-    public int MinerAmount = 1; // ile ma bitcoinow dodawac
+    public float MinerTick = 1f; // co ile sekund ma dodac bitcoiny
+    public float MinerAmount = 0.01f; // ile ma bitcoinow dodawac
 
     private float _time;
 	void Start () {
