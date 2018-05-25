@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2a58bcb60e658da4fbedac0c0aef136b
+timeCreated: 1510340982
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Baby Universe
+  fontNames:
+  - Baby Universe
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 168dba00dc7554149aced8febb849dce, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
