@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SentryGunController : MonoBehaviour {
 
+    [Tooltip("Set this value negative to have laser turned on constantly")]
     public float shotDuration;
     public float laserDamage;
 
@@ -12,11 +13,13 @@ public class SentryGunController : MonoBehaviour {
         laserRay = gameObject.transform.GetChild(0).gameObject;
         laserRay.GetComponent<LaserRayController>().damage = laserDamage;
         laserRay.SetActive(false);
+
+        if (shotDuration < 0) laserRay.SetActive(true);
 	}
 	
 	
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.X)) StartCoroutine(LaserShot(shotDuration));
+        if (Input.GetKeyDown(KeyCode.X) && shotDuration > 0) StartCoroutine(LaserShot(shotDuration));
 	}
 
     IEnumerator LaserShot(float duration)

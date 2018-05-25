@@ -6,6 +6,7 @@ public class Health : MonoBehaviour {
 
     public float maxHealth;
     public float currentHealth;
+    public bool baseObject;
 	void Start () {
         currentHealth = maxHealth;
 	}
@@ -24,6 +25,10 @@ public class Health : MonoBehaviour {
 
     private void Die()
     {
-        Destroy(gameObject);
+        if (baseObject)
+        {
+            //Show losing screen, reset game or something
+        }
+        else Destroy(gameObject);
     }
 }
