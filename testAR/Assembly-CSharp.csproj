@@ -224,8 +224,9 @@
     <Compile Include="Assets\Scripts\LaserRayController.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\Menu\CaptureMenu.cs" />
-    <Compile Include="Assets\Scripts\MenuIconContainer.cs" />
-    <Compile Include="Assets\Scripts\MenuTextIconUpdater.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuTextIconUpdater.cs" />
+    <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
     <Compile Include="Assets\Scripts\Utility\LookAt.cs" />

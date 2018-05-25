@@ -7,7 +7,7 @@ public class CaptureMenu : MonoBehaviour {
 
     public enum Mode
     {
-        switchScene = 0, switchMenu= 1, exit=2, start=3, openMenu=4, closeMenu=5, toggleMenu=6
+        switchScene = 0, switchMenu= 1, exit=2, start=3, openMenu=4, closeMenu=5, toggleMenu=6, nextMenu=7
     }
 
     public Mode mode;
@@ -76,6 +76,17 @@ public class CaptureMenu : MonoBehaviour {
                 }
                 ToggleMenu();
                 break;
+            case Mode.nextMenu:
+                if (NextMenu == null)
+                {
+                    return;
+                }
+                if (Menu == null)
+                {
+                    return;
+                }
+                DoNextMenu();
+                break;
 
             case Mode.exit:
 
@@ -118,6 +129,12 @@ public class CaptureMenu : MonoBehaviour {
     {
         Debug.Log(Menu);
         Menu.SetActive(!Menu.activeSelf);
+    }
+    public void DoNextMenu()
+    {
+        Debug.Log(Menu);
+        Menu.SetActive(false);
+        NextMenu.SetActive(true);
     }
 
     public void Quit()
