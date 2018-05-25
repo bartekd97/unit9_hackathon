@@ -120,8 +120,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894490913828774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -36.05, y: 0, z: -35.47}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.88}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 4266461809996370}
   - {fileID: 4654664910424066}
@@ -394,6 +394,8 @@ MonoBehaviour:
   maxFrontSideDistance: 2
   forceWaitTimeToNewPath: 2
   minimumDistanceForNewPath: 4
+  damagePerTick: 3
+  tickTime: 0.4
 --- !u!136 &136247703308588724
 CapsuleCollider:
   m_ObjectHideFlags: 1
