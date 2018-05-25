@@ -86,6 +86,12 @@
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.64.0.txt" />
     <None Include="Assets\GoogleARCore\Editor\AppDependencies.xml" />
 <<<<<<< .mine
+||||||| .r26
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>D:/Unit9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+=======
+<<<<<<< .mine
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/ARCore/unit9_hackathon/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
@@ -94,6 +100,7 @@
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Unit9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
+>>>>>>> .r28
 >>>>>>> .r27
     <Reference Include="Unity.PackageManagerUI.Editor">
 <<<<<<< .mine
@@ -104,7 +111,6 @@
       <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
 >>>>>>> .r27
     </Reference>
-<<<<<<< .mine
 ||||||| .r23
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Unit9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -114,6 +120,15 @@
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
+<<<<<<< .mine
+||||||| .r26
+||||||| .r24
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>D:/Unit9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+=======
+>>>>>>> .r25
+=======
 ||||||| .r24
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Unit9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -121,6 +136,7 @@
 >>>>>>> .r27
 =======
 >>>>>>> .r25
+>>>>>>> .r28
     <Reference Include="UnityEngine.AIModule">
 <<<<<<< .mine
       <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
