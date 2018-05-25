@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 65506702570526648}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 136247703308588724}
   m_Layer: 0
   m_Name: Cylinder (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 136379367639793758}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -389,7 +389,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontPoint: {fileID: 4377713316776168}
   movementSpeed: 2
-  maxDistance: 3
+  maxDistance: 2
+  maxDistanceForNewPath: 4
+  maxFrontSideDistance: 2
+  forceWaitTimeToNewPath: 2
+  minimumDistanceForNewPath: 4
 --- !u!136 &136247703308588724
 CapsuleCollider:
   m_ObjectHideFlags: 1
