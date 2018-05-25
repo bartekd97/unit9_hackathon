@@ -75,6 +75,7 @@ ModelImporter:
     2300040: Komp_low021
     2300042: Komp_low022
     2300044: Komp_low023
+    2300046: //RootNode
     3300000: Komp_low001
     3300002: Komp_low002
     3300004: Komp_low003
@@ -98,6 +99,7 @@ ModelImporter:
     3300040: Komp_low021
     3300042: Komp_low022
     3300044: Komp_low023
+    3300046: //RootNode
     4300000: Komp_low001
     4300002: Komp_low002
     4300004: Komp_low003
@@ -121,7 +123,13 @@ ModelImporter:
     4300040: Komp_low021
     4300042: Komp_low022
     4300044: Komp_low023
-  externalObjects: {}
+    4300046: Komp_low
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 7d4501d07bb67fb47bef831a734a7c38, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
