@@ -6,16 +6,21 @@ ModelImporter:
     100000: //RootNode
     100002: Podstawa_low
     100004: Talerz_low
+    100006: Kula_low
     400000: //RootNode
     400002: Podstawa_low
     400004: Talerz_low
+    400006: Kula_low
     2100000: 01 - Default
     2300000: Podstawa_low
     2300002: Talerz_low
+    2300004: Kula_low
     3300000: Podstawa_low
     3300002: Talerz_low
+    3300004: Kula_low
     4300000: Podstawa_low
     4300002: Talerz_low
+    4300004: Kula_low
   externalObjects: {}
   materials:
     importMaterials: 1

@@ -7,7 +7,7 @@ public class CaptureMenu : MonoBehaviour {
 
     public enum Mode
     {
-        switchScene = 0, switchMenu= 1, exit=2, start=3
+        switchScene = 0, switchMenu= 1, exit=2, start=3, openMenu=4, closeMenu=5, toggleMenu=6
     }
 
     public Mode mode;
@@ -18,7 +18,8 @@ public class CaptureMenu : MonoBehaviour {
 
     private void Start()
     {
-        Menu = gameObject.transform.parent.gameObject;
+        if (Menu == null)
+            Menu = gameObject.transform.parent.gameObject;
 
     }
 
@@ -54,6 +55,28 @@ public class CaptureMenu : MonoBehaviour {
 
                 break;
 
+            case Mode.openMenu:
+                if (Menu == null)
+                {
+                    return;
+                }
+                OpenMenu();
+                break;
+            case Mode.closeMenu:
+                if (Menu == null)
+                {
+                    return;
+                }
+                CloseMenu();
+                break;
+            case Mode.toggleMenu:
+                if (Menu == null)
+                {
+                    return;
+                }
+                ToggleMenu();
+                break;
+
             case Mode.exit:
 
                 Quit();
@@ -79,6 +102,22 @@ public class CaptureMenu : MonoBehaviour {
     {
         Debug.Log(NextScene);
         SceneManager.LoadScene(NextScene, LoadSceneMode.Single);
+    }
+
+    public void OpenMenu()
+    {
+        Debug.Log(Menu);
+        Menu.SetActive(true);
+    }
+    public void CloseMenu()
+    {
+        Debug.Log(Menu);
+        Menu.SetActive(false);
+    }
+    public void ToggleMenu()
+    {
+        Debug.Log(Menu);
+        Menu.SetActive(!Menu.activeSelf);
     }
 
     public void Quit()
