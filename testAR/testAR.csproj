@@ -419,6 +419,12 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSessionStatus.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+    <Compile Include="Assets\Scripts\BitcoinCurrencyDisplay.cs" />
+    <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
+    <Compile Include="Assets\Scripts\GameGlobal.cs" />
+    <Compile Include="Assets\Scripts\LaserRayController.cs" />
+    <Compile Include="Assets\Scripts\MainScript.cs" />
+    <Compile Include="Assets\Scripts\SentryGunController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\GoogleARCore\Editor\AppDependencies.xml" />
