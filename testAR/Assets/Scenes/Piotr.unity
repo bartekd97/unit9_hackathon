@@ -113,6 +113,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &315430054 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1772147192650458, guid: c10877f7cd5764de18d46d7b777d1faa,
+    type: 2}
+  m_PrefabInternal: {fileID: 2020185656}
+--- !u!114 &315430055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315430054}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfe5643c71110046a1c6bfc3ca20539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2020185657}
+  objectToPlace: {fileID: 0}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  maxPlaceDistance: 10
+  placeInScreenCenter: 0
+  faceMe: 0
+  snapRotationAngle: 45
+  resetRotationAfterPlace: 0
+  useContinuousRotation: 0
+  continuousRotationSpeed: 50
+  toggleKey: 101
+  placeKey: 323
+  positiveRotateKey: 324
+  negativeRotateKey: 0
+  shouldToggleRemover: 1
+--- !u!114 &315430056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 315430054}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a086e202fa7404ba874b21b320549c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildObjectList: {fileID: 11400000, guid: 61df966b9bf40ee41989f49c1c995542, type: 2}
+  BuilderMenuPrefab: {fileID: 1908294984213920, guid: a049775d151b885419fac292cdd4f73d,
+    type: 2}
+  CollapseMenuKey: 113
 --- !u!1 &316840191
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +549,10 @@ MonoBehaviour:
     type: 2}
   AndyAndroidPrefab: {fileID: 1190091649889860, guid: 242a320930b81430ba610f94f9b760c8,
     type: 2}
+  DefenseUnitPrefab: {fileID: 1343690034186562, guid: be73d714faa88464782aa93807ea27e4,
+    type: 2}
   SearchingForPlaneUI: {fileID: 1980426487}
+  check: 0
 --- !u!4 &864982790
 Transform:
   m_ObjectHideFlags: 0
