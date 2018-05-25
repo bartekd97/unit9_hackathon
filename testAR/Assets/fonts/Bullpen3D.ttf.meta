@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 21a5ed84a12972c4e99dc4b2b6a00799
+timeCreated: 1510174401
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bullpen 3D
+  fontNames:
+  - Bullpen 3D
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

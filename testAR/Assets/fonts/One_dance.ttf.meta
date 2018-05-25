@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0fe83ef22e3c2ab4dab81e84c33f1f8d
+timeCreated: 1510174401
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: One Dance
+  fontNames:
+  - One Dance
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

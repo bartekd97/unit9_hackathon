@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: b549b5922fa63ad41bcd505b734a963c
+timeCreated: 1510341092
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Syabil
+  fontNames:
+  - Syabil
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 453cc2c9304ec6b419717bdfa33f845a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
