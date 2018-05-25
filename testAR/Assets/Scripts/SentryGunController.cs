@@ -4,13 +4,25 @@ using UnityEngine;
 
 public class SentryGunController : MonoBehaviour {
 
-	// Use this for initialization
+    public float shotDuration;
+    public float laserDamage;
+
+    private GameObject laserRay;
 	void Start () {
-		
+        laserRay = gameObject.transform.GetChild(0).gameObject;
+        laserRay.GetComponent<LaserRayController>().damage = laserDamage;
+        laserRay.SetActive(false);
 	}
 	
-	// Update is called once per frame
+	
 	void Update () {
-		
+        if (Input.GetKeyDown(KeyCode.X)) StartCoroutine(LaserShot(shotDuration));
 	}
+
+    IEnumerator LaserShot(float duration)
+    {
+        laserRay.SetActive(true);
+        yield return new WaitForSeconds(duration);
+        laserRay.SetActive(false);
+    }
 }
