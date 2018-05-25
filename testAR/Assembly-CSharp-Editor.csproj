@@ -59,6 +59,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BuildSystem\Editor\CustomEditors\BuildItemContainerEditor.cs" />
+    <Compile Include="Assets\BuildSystem\Editor\CustomEditors\BuildItemEditor.cs" />
+    <Compile Include="Assets\BuildSystem\Editor\ObjectGhostMaterialAssigner.cs" />
+    <Compile Include="Assets\BuildSystem\Editor\ObjectPreviewWindow.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\ARCoreProjectSettingsWindow.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AssetHelper.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\Editor\AugmentedImageDatabaseContextMenu.cs" />

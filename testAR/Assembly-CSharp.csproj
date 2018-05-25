@@ -59,6 +59,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BuildSystem\Example\Scripts\ExternalCalls.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\Demo\MaterialSwitcher.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\Demo\OutlineAnimation.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\Demo\Rotate.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\Demo\Toggle.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\LinkedSet.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\Outline.cs" />
+    <Compile Include="Assets\BuildSystem\OutlineEffect\OutlineEffect.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\Data\BuildItem.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\Data\BuildItemContainer.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\Helpers\ObjectPreview.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\Helpers\PivotHelper.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\ObjectPlacer.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\ObjectRemover.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\ObjectSelector.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\UI\BuilderObjectUI.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\UI\BuilderUI.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\Building\UI\IItemSelectionUI.cs" />
+    <Compile Include="Assets\BuildSystem\Scripts\PlayerController.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageExampleController.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedImage\Scripts\AugmentedImageVisualizer.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\CloudAnchor\Scripts\AnchorIdFromRoomRequestMessage.cs" />
@@ -194,7 +213,10 @@
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
+    <None Include="Assets\BuildSystem\OutlineEffect\Resources\OutlineShader.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+    <None Include="Assets\BuildSystem\OutlineEffect\Resources\OutlineBufferShader.shader" />
+    <None Include="Assets\BuildSystem\readme.txt" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\fonts\OpenSans\License!.txt" />
     <None Include="Assets\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
