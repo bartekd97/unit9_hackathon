@@ -80,7 +80,7 @@ namespace GoogleARCore.Examples.HelloAR
         [SerializeField]
         bool check = false;
         //Pole którym sprawdzamy czy gracz kliknął pierwszy raz, jeżeli tak to kładzie bazę. Jeżeli nie to kładzie jednostkę do obrony
-
+        
 
         public void Update()
         {
@@ -112,9 +112,9 @@ namespace GoogleARCore.Examples.HelloAR
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                 TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-            if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
+            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
             {
-                
+
                 // Use hit pose and camera pose to check if hittest is from the
                 // back of the plane, if it is, no need to create the anchor.
                 if ((hit.Trackable is DetectedPlane) &&
