@@ -20,4 +20,8 @@ public class Interactable : MonoBehaviour {
             method.Invoke(GetComponent(nameOfClass), null);
         }
     }
+    public void OnMouseDown()
+    {
+        OnTap();
+    }
 }
