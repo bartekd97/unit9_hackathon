@@ -7,7 +7,7 @@ public class CaptureMenu : MonoBehaviour {
 
     public enum Mode
     {
-        switchScene = 0, switchMenu= 1, exit=2
+        switchScene = 0, switchMenu= 1, exit=2, start=3
     }
 
     public Mode mode;
@@ -19,6 +19,7 @@ public class CaptureMenu : MonoBehaviour {
     private void Start()
     {
         Menu = gameObject.transform.parent.gameObject;
+
     }
 
     [Tooltip("If none leave it")]
@@ -29,13 +30,40 @@ public class CaptureMenu : MonoBehaviour {
         switch(mode)
         {
             case Mode.switchScene:
+
+                if (NextScene == null)
+                {
+                    return;
+                }
                 SwitchScene();
+
                 break;
+
             case Mode.switchMenu:
+
+                if (NextMenu == null)
+                {
+                    return;
+                }
+                if (Menu == null)
+                {
+                    return;
+                }
+
                 SwitchMenu();
+
                 break;
+
             case Mode.exit:
+
                 Quit();
+
+                break;
+
+            case Mode.start:
+                
+
+
                 break;
         }
     }
