@@ -24,6 +24,7 @@ namespace GoogleARCore.Examples.HelloAR
     using GoogleARCore;
     using GoogleARCore.Examples.Common;
     using UnityEngine;
+    using UnityEngine.UI;
 
 #if UNITY_EDITOR
     // Set up touch input propagation while using Instant Preview in the editor.
@@ -80,7 +81,12 @@ namespace GoogleARCore.Examples.HelloAR
         [SerializeField]
         bool check = false;
         //Pole którym sprawdzamy czy gracz kliknął pierwszy raz, jeżeli tak to kładzie bazę. Jeżeli nie to kładzie jednostkę do obrony
-        
+
+        [SerializeField]
+        int placeMode;
+
+        [SerializeField]
+        Image laserCrosshair;
 
         public void Update()
         {
@@ -97,6 +103,10 @@ namespace GoogleARCore.Examples.HelloAR
                     break;
                 }
             }
+            if (placeMode == 1)
+                laserCrosshair.enabled = true;
+            else
+                laserCrosshair.enabled = false;
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
 
@@ -112,7 +122,24 @@ namespace GoogleARCore.Examples.HelloAR
             TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
                 TrackableHitFlags.FeaturePointWithSurfaceNormal;
 
-            if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
+            switch (placeMode)
+            {
+                case 0:
+                    ustawBudynki(raycastFilter);
+                    break;
+
+                case 1:
+                    laser(raycastFilter);
+                    break;
+
+
+            }
+        }
+
+        void ustawBudynki(TrackableHitFlags raycastFilter)
+        {
+            TrackableHit hit;
+            if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
             {
 
                 // Use hit pose and camera pose to check if hittest is from the
@@ -153,7 +180,41 @@ namespace GoogleARCore.Examples.HelloAR
                         var anchor = hit.Trackable.CreateAnchor(hit.Pose);
 
                         defenseUnit.transform.parent = anchor.transform;
+
+                        GetComponent<HelloARController>().enabled = false;
                     }
+                }
+            }
+        }
+
+        void laser(TrackableHitFlags raycastFilter)
+        {
+            TrackableHit hit;
+            if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
+            {
+
+                // Use hit pose and camera pose to check if hittest is from the
+                // back of the plane, if it is, no need to create the anchor.
+                if ((hit.Trackable is DetectedPlane) &&
+                    Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
+                        hit.Pose.rotation * Vector3.up) < 0)
+                {
+                    Debug.Log("Hit at back of the current DetectedPlane");
+                }
+                else
+                {
+                    
+                        var defenseUnit = Instantiate(DefenseUnitPrefab, hit.Pose.position, hit.Pose.rotation);
+
+                        defenseUnit.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+
+                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+
+                        defenseUnit.transform.parent = anchor.transform;
+
+                        laserCrosshair.enabled = false;
+
+                    GetComponent<HelloARController>().enabled = false;
                 }
             }
         }
