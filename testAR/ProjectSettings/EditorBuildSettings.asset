@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity
-    guid: e6a6fa04348cb45c9b0221eb19c946da
-  - enabled: 1
-    path: Assets/Scenes/Bartholomeo.unity
-    guid: 23fee9fa48519a84ca7b7ab620d316fc
+    path: Assets/Scenes/Piotr.unity
+    guid: ae33f78718a641f4eb0b1b02af73ff09
   m_configObjects: {}
