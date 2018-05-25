@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\barte\.android\build-cache\8aacc82dec80c5a8122e026dcfb089218170edf6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="be35cfb98dbf80214072c4eb41da843fb0d4400d">
+        <dex dex="I:\ARCore\Test2\Test2\Temp\gradleOut\build\intermediates\pre-dexed\release\classes_591c1dcd343e2d5d23b95d27918c351e90df38c3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\barte\.android\build-cache\fcf00b3b70dedb7ea9ac9f34042a4e6d4971a902\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="730efff9c50fccabcc6d6779ec09d69913a7bb98">
+        <dex dex="I:\ARCore\Test2\Test2\Temp\gradleOut\build\intermediates\pre-dexed\release\classes_8a3001145679656ee09ea1e0bd0cefd514cb288c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="I:\ARCore\Test2\Test2\Temp\gradleOut\libs\unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="db401f4021204ed29e821e60c9f18d97be57ff54">
+        <dex dex="I:\ARCore\Test2\Test2\Temp\gradleOut\build\intermediates\pre-dexed\release\unity-classes_632ca1d557c2165f509abd5e1cde5f4417cd475a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\barte\.android\build-cache\8f3a190c49f5e3683438a9ccdeeccc8c611fc57e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="3b08b853fe85764387602ff10decaf2b449f4ea2">
+        <dex dex="I:\ARCore\Test2\Test2\Temp\gradleOut\build\intermediates\pre-dexed\release\classes_7a5d974eee2eb59a187e239131f6b080eabd8bb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\barte\.android\build-cache\8f3a190c49f5e3683438a9ccdeeccc8c611fc57e\output\jars\libs\tango_java_lib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="dac29b41332a170a55310a99e3e2f3058e3ac419">
+        <dex dex="I:\ARCore\Test2\Test2\Temp\gradleOut\build\intermediates\pre-dexed\release\tango_java_lib_51b6fdb4a1a3ff9a2998746096a8333928e8f983.jar" />
+    </item>
+
+</items>

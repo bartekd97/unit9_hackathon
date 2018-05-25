@@ -1,0 +1,4 @@
+#Fri May 25 10:39:57 CEST 2018
+base.0=I\:\\ARCore\\Test2\\Test2\\Temp\\gradleOut\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=I\:\\ARCore\\Test2\\Test2\\Temp\\gradleOut\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex

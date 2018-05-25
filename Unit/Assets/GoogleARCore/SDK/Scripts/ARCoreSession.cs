@@ -22,6 +22,19 @@ namespace GoogleARCore
 {
     using GoogleARCoreInternal;
     using UnityEngine;
+#if UNITY_EDITOR
+    // NOTE:
+    // - InstantPreviewInput does not support `deltaPosition`.
+    // - InstantPreviewInput does not support input from
+    //   multiple simultaneous screen touches.
+    // - InstantPreviewInput might miss frames. A steady stream
+    //   of touch events across frames while holding your finger
+    //   on the screen is not guaranteed.
+    // - InstantPreviewInput does not generate Unity UI event system
+    //   events from device touches. Use mouse/keyboard in the editor
+    //   instead.
+    using Input = InstantPreviewInput;
+#endif
 
     /// <summary>
     /// A component that manages the ARCore Session in a Unity scene.
