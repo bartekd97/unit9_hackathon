@@ -12,6 +12,7 @@ public class LaserRayController : MonoBehaviour {
         if(other.gameObject.tag == "Enemy")
         {
             // Deal with enemy health script or whatever
+            other.gameObject.GetComponent<Health>().SubtractHealth(damage);
         }
     }
 }

@@ -16,6 +16,12 @@ public class Health : MonoBehaviour {
         if (currentHealth <= 0) Die();
     }
 
+    public void AddHealth(float amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth) currentHealth = maxHealth;
+    }
+
     private void Die()
     {
         Destroy(gameObject);
