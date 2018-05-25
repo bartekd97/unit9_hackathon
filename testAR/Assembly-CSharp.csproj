@@ -206,6 +206,8 @@
     <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
     <Compile Include="Assets\Scripts\BitcoinCurrencyDisplay.cs" />
     <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
+    <Compile Include="Assets\Scripts\BitcoinPrice.cs" />
+    <Compile Include="Assets\Scripts\ChartController.cs" />
     <Compile Include="Assets\Scripts\EnemiesSpawnController.cs" />
     <Compile Include="Assets\Scripts\GameGlobal.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
