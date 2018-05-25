@@ -8,17 +8,18 @@ public class EnemiesSpawnController : MonoBehaviour {
     public List<int> spawnRates = new List<int>();
 
     private int randomMax;
+    private GameObject enemiesParent;
 	void Start () {
         SetRandomMax();
-	}
+        enemiesParent = GameObject.Find("Enemies");
+
+    }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
-            GameObject enemyPrefab = GetRandomEnemy();
-            GameObject tempEnemy = Instantiate(enemyPrefab, gameObject.transform.position, enemyPrefab.transform.rotation);
-            tempEnemy.GetComponent<Rigidbody>().AddForce(Vector3.forward * Random.Range(1, 5));
+            SpawnEnemy();
         }
     }
     void SetRandomMax()
@@ -35,6 +36,13 @@ public class EnemiesSpawnController : MonoBehaviour {
         return (x >= min && x <= max) ? true : false;
     }
 
+    public void SpawnEnemy()
+    {
+        GameObject enemyPrefab = GetRandomEnemy();
+        GameObject tempEnemy = Instantiate(enemyPrefab, gameObject.transform.position, enemyPrefab.transform.rotation, enemiesParent.transform);
+        tempEnemy.GetComponent<Rigidbody>().AddForce(Vector3.forward * Random.Range(1, 5));
+        GameGlobal.CountEnemies();
+    }
 	GameObject GetRandomEnemy()
     {
         int randomNumber = Random.Range(1, randomMax);

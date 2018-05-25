@@ -25,6 +25,8 @@ public class Health : MonoBehaviour {
 
     private void Die()
     {
+        if (gameObject.tag == "Enemy") GameGlobal.CountEnemies();
+
         if (baseObject)
         {
             //Show losing screen, reset game or something
