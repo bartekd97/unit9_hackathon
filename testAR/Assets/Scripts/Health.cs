@@ -25,7 +25,7 @@ public class Health : MonoBehaviour {
 
     private void Die()
     {
-        if (gameObject.tag == "Enemy") GameGlobal.CountEnemies();
+        GameGlobal.CountEnemies();
 
         if (baseObject)
         {
