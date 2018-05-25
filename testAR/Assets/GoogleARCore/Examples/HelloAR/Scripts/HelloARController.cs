@@ -50,6 +50,8 @@ namespace GoogleARCore.Examples.HelloAR
         /// </summary>
         public GameObject AndyAndroidPrefab;
 
+        public GameObject DefenseUnitPrefab;
+
         /// <summary>
         /// A gameobject parenting UI for displaying the "searching for planes" snackbar.
         /// </summary>
@@ -74,6 +76,12 @@ namespace GoogleARCore.Examples.HelloAR
         /// <summary>
         /// The Unity Update() method.
         /// </summary>
+        /// 
+        [SerializeField]
+        bool check = false;
+        //Pole którym sprawdzamy czy gracz kliknął pierwszy raz, jeżeli tak to kładzie bazę. Jeżeli nie to kładzie jednostkę do obrony
+
+
         public void Update()
         {
             _UpdateApplicationLifecycle();
@@ -117,17 +125,32 @@ namespace GoogleARCore.Examples.HelloAR
                 else
                 {
                     // Instantiate Andy model at the hit pose.
-                    var andyObject = Instantiate(AndyAndroidPrefab, hit.Pose.position, hit.Pose.rotation);
+                    if (!check)
+                    {
+                        var andyObject = Instantiate(AndyAndroidPrefab, hit.Pose.position, hit.Pose.rotation);
 
-                    // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
-                    andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+                        // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
+                        andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
-                    // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
-                    // world evolves.
-                    var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+                        // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
+                        // world evolves.
+                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
 
-                    // Make Andy model a child of the anchor.
-                    andyObject.transform.parent = anchor.transform;
+                        // Make Andy model a child of the anchor.
+                        andyObject.transform.parent = anchor.transform;
+
+                        check = true;
+                    }
+                    else
+                    {
+                        var defenseUnit = Instantiate(DefenseUnitPrefab, hit.Pose.position, hit.Pose.rotation);
+
+                        defenseUnit.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+
+                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+
+                        defenseUnit.transform.parent = anchor.transform;
+                    }
                 }
             }
         }
