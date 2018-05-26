@@ -9,13 +9,18 @@ public static class MenuOpenManager {
     public static void Open( GameObject menu )
     {
         if (currentOpenedMenu)
-            currentOpenedMenu.SetActive(false);
+        {
+            //currentOpenedMenu.SetActive(false);
+            currentOpenedMenu.GetComponent<MenuWindow>().FadeOut();
+        }
         currentOpenedMenu = menu;
-        currentOpenedMenu.SetActive(true);
+        //currentOpenedMenu.SetActive(true);
+        currentOpenedMenu.GetComponent<MenuWindow>().FadeIn();
     }
     public static void Close( GameObject menu )
     {
-        menu.SetActive(false);
+        //menu.SetActive(false);
+        menu.GetComponent<MenuWindow>().FadeOut();
         if (currentOpenedMenu == menu)
             currentOpenedMenu = null;
     }
@@ -23,7 +28,8 @@ public static class MenuOpenManager {
     {
         if (currentOpenedMenu)
         {
-            currentOpenedMenu.SetActive(false);
+            //currentOpenedMenu.SetActive(false);
+            currentOpenedMenu.GetComponent<MenuWindow>().FadeOut();
             currentOpenedMenu = null;
         }
     }
