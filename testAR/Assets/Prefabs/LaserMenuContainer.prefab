@@ -2461,6 +2461,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114114658955267624
 MonoBehaviour:
@@ -2524,6 +2525,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114128585546771196
 MonoBehaviour:
@@ -2539,6 +2541,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114161159002608126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2553,6 +2556,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114170205040308156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2567,6 +2571,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114172032240593544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2646,6 +2651,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114195262116614600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2709,6 +2715,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114259493593502182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2736,6 +2743,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: c899f52d87204e44bbbb001a8968f2fc, type: 3}
 --- !u!114 &114267158781005870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3117,6 +3125,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114398124914296966
 MonoBehaviour:
@@ -3244,6 +3253,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114457655477713200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3334,6 +3344,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114485032833994256
 MonoBehaviour:
@@ -3459,6 +3470,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114513182721805982
 MonoBehaviour:
@@ -3491,6 +3503,7 @@ MonoBehaviour:
   isInteractable: 0
   nameOfClass: 
   nameOfMethod: 
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114521757421538240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3822,6 +3835,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1311305874924708}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114615294140810998
 MonoBehaviour:
@@ -4094,6 +4108,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1492553776418274}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114669757682995868
 MonoBehaviour:
@@ -4284,6 +4299,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: c899f52d87204e44bbbb001a8968f2fc, type: 3}
 --- !u!114 &114700083033904622
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4325,6 +4341,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1311305874924708}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114730892001383870
 MonoBehaviour:
@@ -4528,6 +4545,7 @@ MonoBehaviour:
   mode: 4
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114841656207487278
 MonoBehaviour:
@@ -4559,6 +4577,7 @@ MonoBehaviour:
   isInteractable: 0
   nameOfClass: 
   nameOfMethod: 
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114851196650935042
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4573,6 +4592,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114852964669215212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4587,6 +4607,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1267031409332712}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114871636289387702
 MonoBehaviour:
@@ -4662,6 +4683,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1492553776418274}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114894981746341072
 MonoBehaviour:
@@ -4777,6 +4799,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114943649907151256
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4818,6 +4841,7 @@ MonoBehaviour:
   mode: 4
   NextMenu: {fileID: 0}
   Menu: {fileID: 1311305874924708}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114951327044879086
 MonoBehaviour:
