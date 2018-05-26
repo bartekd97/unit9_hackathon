@@ -253,6 +253,7 @@
     <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\Menu\CaptureMenu.cs" />
+    <Compile Include="Assets\Scripts\Menu\HPBar.cs" />
     <Compile Include="Assets\Scripts\Menu\LaserTextIconUpdater.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuOpenManager.cs" />
