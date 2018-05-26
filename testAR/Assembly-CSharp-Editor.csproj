@@ -52,10 +52,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
+<<<<<<< .mine
+      <HintPath>C:\Program Files\Unity 2018\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+||||||| .r83
+      <HintPath>E:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+=======
       <HintPath>C:\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor">
+<<<<<<< .mine
+      <HintPath>C:\Program Files\Unity 2018\Editor\Data\Managed/UnityEditor.dll</HintPath>
+||||||| .r83
+      <HintPath>E:\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+=======
       <HintPath>C:\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+>>>>>>> .r84
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -75,313 +87,938 @@
     <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
     <None Include="Assets\GoogleARCore\Editor\AppDependencies.xml" />
     <Reference Include="UnityEditor.StandardEvents">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="com.unity.postprocessing.Editor">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="com.unity.postprocessing.Runtime">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.AIModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ARModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.BaselibModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.CloudWebServicesModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.FacebookModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.GridModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.InputModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ParticlesLegacyModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SpatialTrackingModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.StyleSheetsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TimelineModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UIModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.VRModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.WebModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.WindModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.XRModule">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Unity.Locator">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UI">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.Networking">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Networking">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="nunit.framework">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.Timeline">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Timeline">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.TreeEditor">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.UIAutomation">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.UIAutomation">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.GoogleAudioSpatializer">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.HoloLens">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.HoloLens">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.VR">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Graphs">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+>>>>>>> .r84
+    </Reference>
+<<<<<<< .mine
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+||||||| .r83
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>E:/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+=======
+>>>>>>> .r84
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="PackageManagerAssembly">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.64.0">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.64.0.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Google.JarResolver_v1.2.64.0">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.64.0.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Google.VersionHandler">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.64.0">
+<<<<<<< .mine
+      <HintPath>D:/ARCore/unit9_hackathon/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
+=======
       <HintPath>D:/Unity9 hackaton/testAR/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.64.0.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.Analytics">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Analytics">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
+<<<<<<< .mine
+      <HintPath>C:/Users/Bartek/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+||||||| .r83
+      <HintPath>C:/Users/Aleksander/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+=======
       <HintPath>C:/Users/specj/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="System">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="System.Core">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Core.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Core.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Core.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="System.Runtime.Serialization">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Runtime.Serialization.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="System.Xml">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="System.Xml.Linq">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/System.Xml.Linq.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityScript">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="UnityScript.Lang">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/UnityScript.Lang.dll</HintPath>
+>>>>>>> .r84
     </Reference>
     <Reference Include="Boo.Lang">
+<<<<<<< .mine
+      <HintPath>C:/Program Files/Unity 2018/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
+||||||| .r83
+      <HintPath>E:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
+=======
       <HintPath>C:/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/Boo.Lang.dll</HintPath>
+>>>>>>> .r84
     </Reference>
   </ItemGroup>
   <ItemGroup>
