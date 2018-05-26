@@ -704,7 +704,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1785577005793250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.522891, y: -3.3302238, z: -9.575792}
+  m_LocalPosition: {x: 0, y: 0, z: 0.842}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 4486625451539518}
@@ -1385,6 +1385,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114170041754857022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1528,6 +1529,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114242265797835806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1668,6 +1670,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114389295947876164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2146,6 +2149,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114688821624477310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2160,6 +2164,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114718858972875530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2206,6 +2211,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114739428368366272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2220,6 +2226,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114763671854336404
 MonoBehaviour:
   m_ObjectHideFlags: 1

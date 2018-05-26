@@ -9,8 +9,18 @@ public class Interactable : MonoBehaviour {
     public bool isInteractable;
     public string nameOfClass;
     public string nameOfMethod;
+    public AudioClip sfx;
     int counter = 0;
 
+    private AudioSource asource;
+    private void Start()
+    {
+        if (sfx)
+        {
+            asource = gameObject.AddComponent<AudioSource>();
+            asource.playOnAwake = true;
+        }
+    }
 
     public void OnTap()
     {
@@ -21,6 +31,10 @@ public class Interactable : MonoBehaviour {
             Type t = Type.GetType(nameOfClass);
             MethodInfo method = t.GetMethod(nameOfMethod);
             method.Invoke(GetComponent(nameOfClass), null);
+            if (sfx)
+            {
+                asource.PlayOneShot(sfx);
+            }
         }
         Debug.Log("On Tap!");
     }
