@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1799ed162f79e414388237d4d9a8a79c
+guid: a648153285ac72e469a11ea127084025
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -9,12 +9,7 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Portal_low
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 01 - Default
-    second: {fileID: 2100000, guid: 0130e514bcbfc5f44bddf796e7509548, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0

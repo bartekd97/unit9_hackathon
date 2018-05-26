@@ -11,6 +11,7 @@ TagManager:
   - StartButton
   - Menu
   - GameManager
+  - Sentry
   layers:
   - Default
   - TransparentFX
