@@ -98,9 +98,9 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject menu;
         
         public Text tekst;
+        public Text info;
 
-        public GameObject spaceForMenu;
-
+        public bool ghost = false;
 
         private void Start()
         {
@@ -113,11 +113,55 @@ namespace GoogleARCore.Examples.HelloAR
             DefenseUnitPrefab = item;
         }
 
+        void PlaceGhostObject()
+        {
+            if (ghost)
+            {
+                TrackableHit hit;
+                TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
+                   TrackableHitFlags.FeaturePointWithSurfaceNormal;
+                if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
+                {
+
+                    // Use hit pose and camera pose to check if hittest is from the
+                    // back of the plane, if it is, no need to create the anchor.
+                    if ((hit.Trackable is DetectedPlane) &&
+                        Vector3.Dot(FirstPersonCamera.transform.position - hit.Pose.position,
+                            hit.Pose.rotation * Vector3.up) < 0)
+                    {
+                        Debug.Log("Hit at back of the current DetectedPlane");
+                    }
+                    else
+                    {
+                        var andyObject = Instantiate(DefenseUnitPrefab, hit.Pose.position, hit.Pose.rotation);
+
+
+                        //GameGlobal.StartGame(andyObject);
+                        // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
+                        andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+
+                        // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
+                        // world evolves.
+                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+
+                        // Make Andy model a child of the anchor.
+                        andyObject.transform.parent = anchor.transform;
+
+                        Destroy(andyObject);
+
+                    }
+                }
+            }
+        }
+
+        
 
         public void Update()
         {
-            _UpdateApplicationLifecycle();
             
+
+            _UpdateApplicationLifecycle();
+            //PlaceGhostObject();
             // Hide snackbar when currently tracking at least one plane.
             Session.GetTrackables<DetectedPlane>(m_AllPlanes);
             bool showSearchingUI = true;
@@ -136,6 +180,7 @@ namespace GoogleARCore.Examples.HelloAR
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
             tekst.text = placeMode.ToString();
+            
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
             if ((touch = Input.GetTouch(0)).phase != TouchPhase.Began)
@@ -152,20 +197,23 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = AndyAndroidPrefab;
                         ustawBudynki(spawn);
                         placeMode = 3;
-                       // inputControler.enabled = true;
+                        ghost = true;
+                        info.text = "Click on base to buy buildings";
+                        // inputControler.enabled = true;
                         //placeMode = 4;
                         //ustawianie koparki
                         break;
                     case 1:
                         laser();
-                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place to shoot with laser");
+                        
                         //laser XD
                         break;
                     case 2:
                         spawn = menu;
                         ustawBudynki(spawn);
                         placeMode = 3;
-                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for menu");
+                        info.text = "Now choose your game mode";
+                        //spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for menu");
                         //ustawianie menu
                         break;
                     case 3:
@@ -175,7 +223,7 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = DefenseUnitPrefab;
                         ustawBudynki(spawn);
                         placeMode = 3;
-                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for buildings");
+                        //spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for buildings");
                         //ustawianie obrony
                         break;
                 }
