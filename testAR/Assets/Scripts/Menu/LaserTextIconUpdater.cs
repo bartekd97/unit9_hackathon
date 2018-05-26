@@ -18,12 +18,22 @@ public class LaserTextIconUpdater : MonoBehaviour {
         //if (!GameGlobal.isGameStarted)
         //    return;
 
-        LevelDamage.text = "Level: 1\nDamage: 21.37";
-        UpgradePrice.text = "Upgrade: $50000";
-        SellValue.text = "Value: $7777";
-        UpgradeIcon.SetIconType(MenuIconContainer.IconType.Disabled);
+        LevelDamage.text = "Level: " + gameObject.transform.parent.gameObject.GetComponent<SentryGunController>().level.ToString();
+        LevelDamage.text += "\nDamage: " + Mathf.Round(gameObject.transform.parent.gameObject.GetComponent<SentryGunController>().laserDamage).ToString();
+        UpgradePrice.text = "Upgrade: $" + (GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"]).ToString();
+        SellValue.text = "Value: $ " + (Mathf.RoundToInt(GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"]/3)).ToString();
+        UpgradeIcon.SetIconType(MenuIconContainer.IconType.Active);
 
-        ShotLeftTime.text = "21.37s";
-        ShootIcon.SetIconType(MenuIconContainer.IconType.Disabled);
+        ShotLeftTime.text = "";
+        if (gameObject.transform.parent.gameObject.GetComponent<SentryGunController>().timeoutLeft > 0)
+        {
+            ShootIcon.SetIconType(MenuIconContainer.IconType.Disabled);
+            ShotLeftTime.text = Mathf.RoundToInt(gameObject.transform.parent.gameObject.GetComponent<SentryGunController>().timeoutLeft).ToString();
+        }
+        else
+        {
+            ShootIcon.SetIconType(MenuIconContainer.IconType.Active);
+            ShotLeftTime.text = "";
+        }
     }
 }

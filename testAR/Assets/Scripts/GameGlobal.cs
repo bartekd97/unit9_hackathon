@@ -5,7 +5,6 @@ using UnityEngine;
 public static class GameGlobal {
     #region zmienne
     private static bool _isGameStarted = false;
-    private static BitcoinPrice bitcoinStock;
     public static bool isGameStarted
     {
         get
@@ -30,7 +29,6 @@ public static class GameGlobal {
     #endregion
     public static void AddCash(string currency, float amount)
     {
-        bitcoinExchange = bitcoinStock.bitcoinPrice;
         BTCToUSD(bitcoinExchange, bitcoinsCurrency);
         if(currency.ToLower() == "usd" || currency.ToLower() == "dollars" || currency == "$")
         {
@@ -72,7 +70,11 @@ public static class GameGlobal {
     {
         enemiesOnTheScene = GameObject.Find("Enemies").transform.childCount;
     }
-
+    public static bool CanBuy(float dollarPrice)
+    {
+        BTCToUSD(bitcoinExchange, bitcoinsCurrency);
+        return dollarPrice < usdCurrency ? true : false;
+    }
     public static void StartGame(GameObject bitcoinMiner, Vector3 minerPosition, Quaternion minerRotation, Transform parent)
     {
         if (_isGameStarted)
