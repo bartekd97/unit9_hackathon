@@ -15,6 +15,7 @@ public class RobotAI : MonoBehaviour {
     public float damagePerTick;
     public float tickTime;
 
+    private GameObject bitcoinMiner;
     private const float C_RAYCAST_REFRESH_TIME = 0.25f; // 4 razy na sekunde
 
     private bool reachedDestination = false;
@@ -29,6 +30,7 @@ public class RobotAI : MonoBehaviour {
     private float _time;
     private float forceWaitSince;
     void Start () {
+        bitcoinMiner = GameObject.FindGameObjectWithTag("BitcoinMiner");
         if (GameGlobal.isGameStarted)
             CalculateMovementDirection();
         _time = Time.time;
@@ -37,6 +39,7 @@ public class RobotAI : MonoBehaviour {
 	
 
 	void Update () {
+        Debug.Log("Going to " + toPosition);
         if (!GameGlobal.isGameStarted || _reachedMiner)
             return;
         float distance = (frontPoint.position - toPosition).magnitude;
@@ -120,7 +123,9 @@ public class RobotAI : MonoBehaviour {
     {
         if (!keepPathToAction || (keepPathToAction && (forceWait || reachedDestination)))
         {
-            toPosition = GameGlobal.bitcoinMiner.transform.position;
+            //toPosition = GameGlobal.bitcoinMiner.transform.position;
+            toPosition = bitcoinMiner.transform.position;
+            Debug.Log("I see Bitcoin Miner at " + toPosition);
             if (keepPathToAction)
             {
                 RotateToPoint(toPosition);
@@ -185,7 +190,7 @@ public class RobotAI : MonoBehaviour {
     }
     private bool TryToCalculateNewPath()
     {
-        float dist = (frontPoint.position - GameGlobal.bitcoinMiner.transform.position).magnitude;
+        float dist = (frontPoint.position - bitcoinMiner.transform.position).magnitude;
         bool wasHit;
         Vector3 position;
         float mag;
@@ -219,7 +224,7 @@ public class RobotAI : MonoBehaviour {
     {
         while (_reachedMiner)
         {
-            GameGlobal.bitcoinMiner.GetComponent<Health>().SubtractHealth(damagePerTick);
+            bitcoinMiner.GetComponent<Health>().SubtractHealth(damagePerTick);
             yield return new WaitForSeconds(tickTime);
         }
     }
