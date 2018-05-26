@@ -98,6 +98,7 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject menu;
         
         public Text tekst;
+        public Text info;
 
 
         private void Start()
@@ -156,6 +157,7 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = menu;
                         ustawBudynki(spawn);
                         placeMode = 3;
+                        info.text = "";
                         //ustawianie menu
                         break;
                     case 3:
@@ -164,6 +166,7 @@ namespace GoogleARCore.Examples.HelloAR
                     case 4:
                         spawn = DefenseUnitPrefab;
                         ustawBudynki(spawn);
+                        placeMode = 3;
                         //ustawianie obrony
                         break;
                 }

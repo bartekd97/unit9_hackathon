@@ -10,8 +10,14 @@ public class ShopItem : MonoBehaviour {
     public Text nameText;
     public Text priceText;
     public MenuIconContainer icon;
+    public GoogleARCore.Examples.HelloAR.HelloARController helloARController;
 
-	void Update () {
+    private void Start()
+    {
+        helloARController = GameObject.FindGameObjectWithTag("PlaceController").GetComponent<GoogleARCore.Examples.HelloAR.HelloARController>();
+    }
+
+    void Update () {
         //if (!GameGlobal.isGameStarted)
           //  return;
 
@@ -27,5 +33,6 @@ public class ShopItem : MonoBehaviour {
     {
         Debug.Log( "Kupiono " + name );
         MenuOpenManager.CloseCurrent();
+        helloARController.placeMode = 4;
     }
 }
