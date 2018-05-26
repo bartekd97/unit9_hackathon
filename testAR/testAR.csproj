@@ -460,6 +460,7 @@
     <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
     <Compile Include="Assets\Scripts\BitcoinPrice.cs" />
     <Compile Include="Assets\Scripts\ChartController.cs" />
+    <Compile Include="Assets\Scripts\Debugging\AngleDebug.cs" />
     <Compile Include="Assets\Scripts\Debugging\DebugTeleporters.cs" />
     <Compile Include="Assets\Scripts\EnemiesSpawnController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
@@ -468,6 +469,7 @@
     <Compile Include="Assets\Scripts\Interactions\InputControler.cs" />
     <Compile Include="Assets\Scripts\Interactions\Interactable.cs" />
     <Compile Include="Assets\Scripts\LaserRayController.cs" />
+    <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\Menu\CaptureMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
