@@ -7,6 +7,12 @@ public class MenuWindow : MonoBehaviour {
     public bool isIndicator = false;
     public MenuWindow[] indicatorMenus;
 
+    private bool _isActive = false;
+    public bool isActive
+    {
+        get { return _isActive;  }
+    }
+
     [HideInInspector]
     public List<MenuWindow> indicatorCallList = new List<MenuWindow>();
     private const float C_EFFECT_SPEED = 3.0f;
@@ -66,6 +72,9 @@ public class MenuWindow : MonoBehaviour {
 
     public void FadeIn()
     {
+        if (_isActive)
+            return;
+
         fromLevel = 0f;
         toLevel = 1f;
         //currentLevel = 0f;
@@ -77,9 +86,13 @@ public class MenuWindow : MonoBehaviour {
             foreach (MenuWindow ind in indicatorCallList)
                 ind.OnWindowCallIndicator(this, true);
         }
+        _isActive = true;
     }
     public void FadeOut()
     {
+        if (!_isActive)
+            return;
+
         fromLevel = 1f;
         toLevel = 0f;
         //currentLevel = 1f;
@@ -90,6 +103,7 @@ public class MenuWindow : MonoBehaviour {
             foreach (MenuWindow ind in indicatorCallList)
                 ind.OnWindowCallIndicator(this, false);
         }
+        _isActive = false;
     }
 
     public void OnWindowCallIndicator(MenuWindow wnd, bool state)
