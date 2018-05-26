@@ -26,7 +26,12 @@ ModelImporter:
     4300002: Talerz_low
     4300004: Kula1_low
     4300006: Kula2_low
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: c75d2ac95339f57428eaef88922cf338, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

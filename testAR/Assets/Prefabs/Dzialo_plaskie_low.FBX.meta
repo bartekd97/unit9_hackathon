@@ -16,7 +16,12 @@ ModelImporter:
     3300002: Wiezyczka_low
     4300000: Baza_low
     4300002: Wiezyczka_low
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: a1c283fd1b25a894abfb8bc583bbdb18, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

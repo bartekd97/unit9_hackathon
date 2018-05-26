@@ -462,6 +462,7 @@
     <Compile Include="Assets\Scripts\ChartController.cs" />
     <Compile Include="Assets\Scripts\Debugging\DebugTeleporters.cs" />
     <Compile Include="Assets\Scripts\EnemiesSpawnController.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameGlobal.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Interactions\InputControler.cs" />
@@ -472,6 +473,8 @@
     <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuOpenManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuTextIconUpdater.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuWindow.cs" />
+    <Compile Include="Assets\Scripts\Menu\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
