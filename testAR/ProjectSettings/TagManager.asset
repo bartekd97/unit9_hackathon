@@ -12,6 +12,8 @@ TagManager:
   - Menu
   - GameManager
   - Sentry
+  - Info
+  - PlaceController
   layers:
   - Default
   - TransparentFX

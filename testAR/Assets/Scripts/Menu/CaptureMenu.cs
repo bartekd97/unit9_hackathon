@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CaptureMenu : MonoBehaviour {
 
@@ -15,9 +16,12 @@ public class CaptureMenu : MonoBehaviour {
     [Tooltip("If none leave it")]
     public GameObject NextMenu;
     public GameObject Menu;
+    public Text info;
 
-    private void Start()
+    void Start()
     {
+        info = GameObject.FindGameObjectWithTag("Info").GetComponent<Text>();
+        info.text = "Now place your Bitcoin miner base";
         if (Menu == null)
             Menu = gameObject.transform.parent.gameObject;
 
@@ -25,6 +29,13 @@ public class CaptureMenu : MonoBehaviour {
 
     [Tooltip("If none leave it")]
     public string NextScene;
+
+    IEnumerator Timer()
+    {
+        info.text = "Click on base to buy buildings";
+        yield return new WaitForSeconds(3f);
+        GameObject.FindGameObjectWithTag("Info").SetActive(false);
+    }
 
     public void Capture()
     {
@@ -100,7 +111,7 @@ public class CaptureMenu : MonoBehaviour {
                 manager.GetComponent<GoogleARCore.Examples.HelloAR.Gamemanager>().StartGame();
                 GameObject menu = gameObject.transform.parent.gameObject;
                 menu.SetActive(false);
-
+                info.text = "Click on base to buy buildings";
                 break;
         }
     }

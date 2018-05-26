@@ -16,6 +16,7 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject Canvas;
         public GameObject stopScanTerrainObject;
         public Button[] buttons;
+        public Text info;
        
         // Use this for initialization
         void Start()
@@ -23,7 +24,7 @@ namespace GoogleARCore.Examples.HelloAR
             Canvas = GameObject.FindGameObjectWithTag("Canvas");
             findButons();
             stopScanTerrain.onClick.AddListener(disableScanning);
-           
+            info.text = "Move your phone to detect the foor, then click next";
         }
 
         // Update is called once per frame
@@ -58,6 +59,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         void disableScanning()
         {
+            info.text = "Now place your menu buttons on floor";
             detectedPlaneGenerator.enabled = false;
             DetectedPlaneVisualizer[] plane = FindObjectsOfType<DetectedPlaneVisualizer>();
             for (int i = 0; i < plane.Length; i++)
