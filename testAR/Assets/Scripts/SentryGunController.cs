@@ -9,6 +9,7 @@ public class SentryGunController : MonoBehaviour {
     public float laserDamage;
 
     public Dictionary<string, bool> powerUps = new Dictionary<string, bool>();
+    public Dictionary<string, bool> powerUpsUpgraded = new Dictionary<string, bool>();
     public Dictionary<string, float> powerUpsValues = new Dictionary<string, float>();
 
     private GameObject laserRay;
@@ -17,15 +18,15 @@ public class SentryGunController : MonoBehaviour {
         powerUps.Add("SlowDown", false);
         powerUps.Add("Fire", false);
         powerUps.Add("Weaken", false);
+        powerUpsUpgraded.Add("Freeze", false);
+        powerUpsUpgraded.Add("SlowDown", false);
+        powerUpsUpgraded.Add("Fire", false);
+        powerUpsUpgraded.Add("Weaken", false);
 
-        powerUps["Freeze"] = true;
         powerUpsValues["Freeze"] = 1.3f;
-
-        powerUps["Weaken"] = true;
         powerUpsValues["Weaken"] = 1.5f;
-
-        powerUps["SlowDown"] = true;
-        powerUpsValues["SlowDown"] = 2f;
+        powerUpsValues["SlowDown"] = 1f;
+        powerUpsValues["Fire"] = 1.25f;
 
         laserRay = gameObject.transform.GetChild(0).gameObject;
         laserRay.GetComponent<LaserRayController>().damage = laserDamage;
@@ -34,7 +35,15 @@ public class SentryGunController : MonoBehaviour {
         if (shotDuration < 0) laserRay.SetActive(true);
 	}
 	
-	
+	public void GetPowerUp(string powerUpName)
+    {
+        if (!powerUps[powerUpName]) powerUps[powerUpName] = true;
+        else if (!powerUpsUpgraded[powerUpName])
+        {
+            powerUpsValues[powerUpName] *= 1.37f;
+            powerUpsUpgraded[powerUpName] = true;
+        }
+    }
 	void Update () {
         if (Input.GetKeyDown(KeyCode.X) && shotDuration > 0) Shoot();
 	}
