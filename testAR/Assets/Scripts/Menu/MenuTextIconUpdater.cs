@@ -10,8 +10,8 @@ public class MenuTextIconUpdater : MonoBehaviour {
     public MenuIconContainer LevelupIcon;
 
 	void Update () {
-        if (!GameGlobal.isGameStarted)
-            return;
+        //if (!GameGlobal.isGameStarted)
+        //    return;
 
         LevelAndMake.text = "Level: 3\nMake: 3 BTC/min";
         ExpToNext.text = "Exp to next lvl: 3000";
