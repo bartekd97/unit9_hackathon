@@ -480,6 +480,7 @@
     <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
+    <Compile Include="Assets\Scripts\SpawnTeleports.cs" />
     <Compile Include="Assets\Scripts\Utility\LookAt.cs" />
   </ItemGroup>
   <ItemGroup>
