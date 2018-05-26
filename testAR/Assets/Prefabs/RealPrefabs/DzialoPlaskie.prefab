@@ -951,7 +951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1729044793782222
 GameObject:
   m_ObjectHideFlags: 1
@@ -4031,6 +4031,7 @@ MonoBehaviour:
   timeout: 6
   timeoutLeft: 0
   level: 1
+  powerUpIndicatorsParent: {fileID: 1839392816174182}
 --- !u!114 &114611964467294246
 MonoBehaviour:
   m_ObjectHideFlags: 1
