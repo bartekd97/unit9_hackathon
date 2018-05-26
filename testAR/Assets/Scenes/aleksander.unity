@@ -256,8 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68229c43cd7450c43ac516472401b8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bitcoinMinerPrefab: {fileID: 1713481808900262, guid: 3744db6404d438a48bbf4e69c899b407,
-    type: 2}
+  spawner: {fileID: 0}
 --- !u!4 &309339228
 Transform:
   m_ObjectHideFlags: 0
