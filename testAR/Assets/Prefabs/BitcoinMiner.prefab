@@ -915,7 +915,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1213879371716292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.25}
+  m_LocalPosition: {x: 0, y: 0, z: -5.42}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 4458073512622938}
@@ -2175,6 +2175,7 @@ MonoBehaviour:
   nameText: {fileID: 114547573470649568}
   priceText: {fileID: 114835512875488482}
   icon: {fileID: 114245669009349788}
+  product: {fileID: 0}
   helloARController: {fileID: 0}
 --- !u!114 &114402279416826116
 MonoBehaviour:
@@ -2192,6 +2193,7 @@ MonoBehaviour:
   nameText: {fileID: 114627789393913842}
   priceText: {fileID: 114479106413508122}
   icon: {fileID: 114030196552296700}
+  product: {fileID: 0}
   helloARController: {fileID: 0}
 --- !u!114 &114406799767847834
 MonoBehaviour:
@@ -2209,6 +2211,7 @@ MonoBehaviour:
   nameText: {fileID: 114375646660093414}
   priceText: {fileID: 114132358045650644}
   icon: {fileID: 114716752667013264}
+  product: {fileID: 0}
   helloARController: {fileID: 0}
 --- !u!114 &114415418732218362
 MonoBehaviour:
@@ -2823,6 +2826,7 @@ MonoBehaviour:
   nameText: {fileID: 114802415366594106}
   priceText: {fileID: 114453113830031336}
   icon: {fileID: 114484693334746018}
+  product: {fileID: 0}
   helloARController: {fileID: 0}
 --- !u!114 &114743871586556136
 MonoBehaviour:
