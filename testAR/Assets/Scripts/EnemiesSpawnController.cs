@@ -12,7 +12,6 @@ public class EnemiesSpawnController : MonoBehaviour {
 	void Start () {
         SetRandomMax();
         enemiesParent = GameObject.Find("Enemies");
-
     }
 
     private void Update()
@@ -39,10 +38,12 @@ public class EnemiesSpawnController : MonoBehaviour {
     public void SpawnEnemy()
     {
         GameObject enemyPrefab = GetRandomEnemy();
-        GameObject tempEnemy = Instantiate(enemyPrefab, gameObject.transform.position, enemyPrefab.transform.rotation, enemiesParent.transform);
-        tempEnemy.GetComponent<Rigidbody>().AddForce(Vector3.forward * Random.Range(1, 5));
-        GameGlobal.CountEnemies();
-       
+        if (enemyPrefab != null)
+        {
+            GameObject tempEnemy = Instantiate(enemyPrefab, transform.position, transform.rotation, enemiesParent.transform);
+            //tempEnemy.GetComponent<Rigidbody>().AddForce(Vector3.forward * Random.Range(1, 5));
+            GameGlobal.CountEnemies();
+        }
     }
 	GameObject GetRandomEnemy()
     {

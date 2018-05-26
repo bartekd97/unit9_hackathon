@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 public class MainScript : MonoBehaviour {
-    public GameObject bitcoinMinerPrefab;
+    public EnemiesSpawnController spawner;
 
-	void Awake () {
-        GameGlobal.StartGame(bitcoinMinerPrefab, gameObject.transform.position, gameObject.transform.rotation, gameObject.transform);
-        //Instantiate(robotPrefab, robotPortal.position, robotPortal.rotation, robotPortal);
+	void Start () {
+        
+    }
+
+    public void spawn()
+    {
+        spawner.SpawnEnemy();
     }
 }
