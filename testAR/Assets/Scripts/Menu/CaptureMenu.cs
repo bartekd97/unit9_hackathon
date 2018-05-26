@@ -95,8 +95,11 @@ public class CaptureMenu : MonoBehaviour {
                 break;
 
             case Mode.start:
-                
 
+                GameObject manager = GameObject.FindGameObjectWithTag("GameManager");
+                manager.GetComponent<GoogleARCore.Examples.HelloAR.Gamemanager>().StartGame();
+                GameObject menu = gameObject.transform.parent.gameObject;
+                menu.SetActive(false);
 
                 break;
         }
