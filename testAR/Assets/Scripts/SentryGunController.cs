@@ -36,9 +36,12 @@ public class SentryGunController : MonoBehaviour {
 	
 	
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.X) && shotDuration > 0) StartCoroutine(LaserShot(shotDuration));
+        if (Input.GetKeyDown(KeyCode.X) && shotDuration > 0) Shoot();
 	}
-
+    public void Shoot()
+    {
+        StartCoroutine(LaserShot(shotDuration));
+    }
     IEnumerator LaserShot(float duration)
     {
         laserRay.SetActive(true);
