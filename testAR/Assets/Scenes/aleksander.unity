@@ -510,16 +510,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114838641441486366, guid: e726aecebe30bb5438da6b69101e3478,
-        type: 2}
-      propertyPath: laserDamage
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 114838641441486366, guid: e726aecebe30bb5438da6b69101e3478,
-        type: 2}
-      propertyPath: shotDuration
-      value: 0.3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e726aecebe30bb5438da6b69101e3478, type: 2}
   m_IsPrefabParent: 0
@@ -845,23 +835,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1269238804 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1312854078991828, guid: e726aecebe30bb5438da6b69101e3478,
-    type: 2}
-  m_PrefabInternal: {fileID: 898429576}
---- !u!114 &1269238809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1269238804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 453ed53add3689e488f2bb8bfaf57904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
 --- !u!1001 &1716821875
 Prefab:
   m_ObjectHideFlags: 0

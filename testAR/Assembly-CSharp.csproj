@@ -217,6 +217,7 @@
     <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
     <Compile Include="Assets\Scripts\BitcoinPrice.cs" />
     <Compile Include="Assets\Scripts\ChartController.cs" />
+    <Compile Include="Assets\Scripts\Debugging\DebugTeleporters.cs" />
     <Compile Include="Assets\Scripts\EnemiesSpawnController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameGlobal.cs" />
