@@ -11,8 +11,8 @@ public class MinerIndicatorUpdater : MonoBehaviour {
 
     void Update ()
     {
-        LevelXP.text = "Level: 3\nXP: 12345";
-        Tokens.text = "Available tokens: 3";
-        BTC.text = "Currency: 1,237 BTC\n1 BTC = 23,456$";
+        LevelXP.text = "Level: " + GameGlobal.currentLevel.ToString() + "\nXP: " + GameGlobal.totalExperience.ToString();
+        Tokens.text = "Available tokens: " + GameGlobal.playerTokens.ToString();
+        BTC.text = "Currency: " + GameGlobal.bitcoinsCurrency.ToString() + " BTC\n1 BTC = " + GameGlobal.bitcoinExchange.ToString() + "$";
 	}
 }

@@ -26,6 +26,8 @@ public static class GameGlobal {
     public static float bitcoinsCurrency = 0;
     public static float usdCurrency = 0;
     public static float bitcoinExchange;
+    public static int currentLevel = 1;
+    public static int totalExperience = 0;
     #endregion
     public static void AddCash(string currency, float amount)
     {
@@ -83,6 +85,9 @@ public static class GameGlobal {
        _bitcoinMiner = (GameObject.Instantiate(bitcoinMiner, minerPosition, minerRotation, parent) as GameObject).GetComponent<BitcoinMiner>();
        _bitcoinMiner = bitcoinMiner.GetComponent<BitcoinMiner>();
         bitcoinsCurrency = 0;
+
+        currentLevel = 1;
+        totalExperience = 0;
 
         _isGameStarted = true;
     }

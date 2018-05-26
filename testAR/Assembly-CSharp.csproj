@@ -239,6 +239,7 @@
     <Compile Include="Assets\Scripts\Menu\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Menu\PowerupItem.cs" />
     <Compile Include="Assets\Scripts\Menu\RotateMenuMiner.cs" />
+    <Compile Include="Assets\Scripts\Menu\SetGameOverStats.cs" />
     <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
