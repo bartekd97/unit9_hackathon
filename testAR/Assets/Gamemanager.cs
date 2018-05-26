@@ -58,7 +58,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         void disableScanning()
         {
-            info.text = "Now place your menu buttons on floor";
+            //info.text = "Now place your menu buttons on floor";
             detectedPlaneGenerator.enabled = false;
             DetectedPlaneVisualizer[] plane = FindObjectsOfType<DetectedPlaneVisualizer>();
             for (int i = 0; i < plane.Length; i++)
@@ -68,7 +68,6 @@ namespace GoogleARCore.Examples.HelloAR
             helloARController.enabled = true;
             helloARController.placeMode = 2;
             stopScanTerrainObject.SetActive(false);
-           // inputControler.enabled = false;
         }
 
     }
