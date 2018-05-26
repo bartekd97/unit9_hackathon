@@ -27,15 +27,14 @@ public class CaptureMenu : MonoBehaviour {
 
     }
 
+
+    public void SetText(string text)
+    {
+        info.text = text;
+    }
+
     [Tooltip("If none leave it")]
     public string NextScene;
-
-    IEnumerator Timer()
-    {
-        info.text = "Click on base to buy buildings";
-        yield return new WaitForSeconds(3f);
-        GameObject.FindGameObjectWithTag("Info").SetActive(false);
-    }
 
     public void Capture()
     {
@@ -132,18 +131,26 @@ public class CaptureMenu : MonoBehaviour {
     public void OpenMenu()
     {
         MenuOpenManager.Open(Menu);
+        info.text = "Select what you want!";
     }
     public void CloseMenu()
     {
         MenuOpenManager.Close(Menu);
+        info.text = "Do what you want!";
     }
     public void ToggleMenu()
     {
         Debug.Log(Menu);
         if (Menu.activeSelf)
+        {
             MenuOpenManager.Close(Menu);
+            info.text = "Do what you want!";
+        }
         else
+        {
             MenuOpenManager.Open(Menu);
+            info.text = "Select what you want!";
+        }
     }
     public void DoNextMenu()
     {

@@ -52,7 +52,6 @@ namespace GoogleARCore.Examples.HelloAR
         public void StartGame()
         {
             helloARController.placeMode = 0;
-           
         }
 
 

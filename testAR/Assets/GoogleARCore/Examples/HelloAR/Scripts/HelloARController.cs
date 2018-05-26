@@ -98,14 +98,21 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject menu;
         
         public Text tekst;
-        public Text info;
+
+        public GameObject spaceForMenu;
 
 
         private void Start()
         {
-           
+            GameGlobal.AddCash("dollar", 2000000);
             //spawn = DefenseUnitPrefab;
         }
+
+        public void SetPrefab(GameObject item)
+        {
+            DefenseUnitPrefab = item;
+        }
+
 
         public void Update()
         {
@@ -151,13 +158,14 @@ namespace GoogleARCore.Examples.HelloAR
                         break;
                     case 1:
                         laser();
+                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place to shoot with laser");
                         //laser XD
                         break;
                     case 2:
                         spawn = menu;
                         ustawBudynki(spawn);
                         placeMode = 3;
-                        info.text = "";
+                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for menu");
                         //ustawianie menu
                         break;
                     case 3:
@@ -167,6 +175,7 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = DefenseUnitPrefab;
                         ustawBudynki(spawn);
                         placeMode = 3;
+                        spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for buildings");
                         //ustawianie obrony
                         break;
                 }
