@@ -199,7 +199,7 @@ namespace GoogleARCore.Examples.HelloAR
                         var andyObject = Instantiate(spawn, hit.Pose.position, hit.Pose.rotation);
 
                     if(!check)
-                        GameGlobal.StartGame(andyObject);
+                        //GameGlobal.StartGame(andyObject);
                     // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                         andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
