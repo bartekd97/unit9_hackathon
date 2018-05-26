@@ -22,10 +22,12 @@ public class Interactable : MonoBehaviour {
             MethodInfo method = t.GetMethod(nameOfMethod);
             method.Invoke(GetComponent(nameOfClass), null);
         }
+        Debug.Log("On Tap!");
     }
 
     public void OnMouseDown()
     {
         OnTap();
+        Debug.Log("On Mouse Down!");
     }
 }

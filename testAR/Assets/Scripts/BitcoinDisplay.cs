@@ -7,11 +7,11 @@ public class BitcoinDisplay : MonoBehaviour {
 
     private Text display;
 	void Start () {
-        display = GameObject.Find("BitcoinDisplay").GetComponent<Text>();
+        //display = GameObject.Find("BitcoinDisplay").GetComponent<Text>();
 	}
 	
 	
 	void Update () {
-        display.text = "BTC: " + GameGlobal.bitcoinsCurrency.ToString() + "\n$: " + GameGlobal.usdCurrency.ToString();
+        //display.text = "BTC: " + GameGlobal.bitcoinsCurrency.ToString() + "\n$: " + GameGlobal.usdCurrency.ToString();
 	}
 }

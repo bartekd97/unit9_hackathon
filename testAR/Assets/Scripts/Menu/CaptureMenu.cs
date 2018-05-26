@@ -20,8 +20,8 @@ public class CaptureMenu : MonoBehaviour {
 
     void Start()
     {
-        info = GameObject.FindGameObjectWithTag("Info").GetComponent<Text>();
-        info.text = "Now place your Bitcoin miner base";
+        //info = GameObject.FindGameObjectWithTag("Info").GetComponent<Text>();
+        //info.text = "Now place your Bitcoin miner base";
         if (Menu == null)
             Menu = gameObject.transform.parent.gameObject;
 
@@ -110,7 +110,7 @@ public class CaptureMenu : MonoBehaviour {
                 manager.GetComponent<GoogleARCore.Examples.HelloAR.Gamemanager>().StartGame();
                 GameObject menu = gameObject.transform.parent.gameObject;
                 menu.SetActive(false);
-                info.text = "Click on base to buy buildings";
+                //info.text = "Click on base to buy buildings";
                 break;
         }
     }
@@ -131,12 +131,12 @@ public class CaptureMenu : MonoBehaviour {
     public void OpenMenu()
     {
         MenuOpenManager.Open(Menu);
-        info.text = "Select what you want!";
+        //info.text = "Select what you want!";
     }
     public void CloseMenu()
     {
         MenuOpenManager.Close(Menu);
-        info.text = "Do what you want!";
+        //info.text = "Do what you want!";
     }
     public void ToggleMenu()
     {
@@ -144,12 +144,12 @@ public class CaptureMenu : MonoBehaviour {
         if (Menu.activeSelf)
         {
             MenuOpenManager.Close(Menu);
-            info.text = "Do what you want!";
+            //info.text = "Do what you want!";
         }
         else
         {
             MenuOpenManager.Open(Menu);
-            info.text = "Select what you want!";
+            //info.text = "Select what you want!";
         }
     }
     public void DoNextMenu()
