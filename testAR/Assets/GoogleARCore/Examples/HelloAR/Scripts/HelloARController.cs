@@ -98,10 +98,11 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject menu;
         
         public Text tekst;
-        
+
 
         private void Start()
         {
+           
             //spawn = DefenseUnitPrefab;
         }
 
@@ -126,10 +127,10 @@ namespace GoogleARCore.Examples.HelloAR
                 laserCrosshair.enabled = false;
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
-            tekst.text = Input.touchCount.ToString();
+            tekst.text = placeMode.ToString();
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
-            if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
+            if ((touch = Input.GetTouch(0)).phase != TouchPhase.Began)
             {
                 return;
             }
@@ -154,7 +155,7 @@ namespace GoogleARCore.Examples.HelloAR
                     case 2:
                         spawn = menu;
                         ustawBudynki(spawn);
-                        placeMode = 0;
+                        placeMode = 3;
                         //ustawianie menu
                         break;
                     case 3:
@@ -165,11 +166,11 @@ namespace GoogleARCore.Examples.HelloAR
                         ustawBudynki(spawn);
                         //ustawianie obrony
                         break;
-
-
                 }
             }
         }
+
+        
 
         void Shoot(Vector2 screenPoint)
         {

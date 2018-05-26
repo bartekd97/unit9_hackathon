@@ -26,7 +26,7 @@ public static class MenuOpenManager {
     }
     public static void CloseCurrent()
     {
-        if (currentOpenedMenu)
+        if (currentOpenedMenu != null)
         {
             //currentOpenedMenu.SetActive(false);
             currentOpenedMenu.GetComponent<MenuWindow>().FadeOut();

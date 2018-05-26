@@ -854,6 +854,40 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390505083}
+--- !u!1 &1532544783 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1637996540812124, guid: c10877f7cd5764de18d46d7b777d1faa,
+    type: 2}
+  m_PrefabInternal: {fileID: 2020185656}
+--- !u!124 &1532544784
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532544783}
+  m_Enabled: 1
+--- !u!92 &1532544788
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532544783}
+  m_Enabled: 1
+--- !u!114 &1532544789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1532544783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33506330de8cd7d4193853cbd67276fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rysujCelownik: 1
+  crosshairColor: {r: 1, g: 1, b: 1, a: 1}
+  width: 2
+  rozmiarCel: 2
 --- !u!1 &1980426487
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 78.17505}
+  m_AnchoredPosition: {x: 0, y: 78.174805}
   m_SizeDelta: {x: 0, y: 156.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980426489
