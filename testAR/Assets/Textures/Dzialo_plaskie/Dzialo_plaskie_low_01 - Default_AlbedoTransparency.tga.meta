@@ -1,5 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< .mine
+guid: dbda486383e645744903024e79a53a6d
+||||||| .r76
+guid: 8f45deb60785105448cfe7e63e6b1b09
+=======
 guid: e50df327af00db341b8e2be244e91803
+>>>>>>> .r77
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}

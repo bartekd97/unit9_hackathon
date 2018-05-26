@@ -184,6 +184,10 @@ namespace GoogleARCore.Examples.HelloAR
                     MethodInfo method = t.GetMethod("OnTap");
                     method.Invoke(script, null);
                 }
+                else
+                {
+                    MenuOpenManager.CloseCurrent();
+                }
             }
         }
 
