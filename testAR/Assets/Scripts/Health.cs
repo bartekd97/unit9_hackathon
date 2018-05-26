@@ -7,8 +7,11 @@ public class Health : MonoBehaviour {
     public float maxHealth;
     public float currentHealth;
     public bool baseObject;
+
+    private LevelController levelController;
 	void Start () {
         currentHealth = maxHealth;
+        levelController = GameObject.Find("LevelHandler").GetComponent<LevelController>();
 	}
 	
     public void SubtractHealth(float amount)
@@ -25,7 +28,9 @@ public class Health : MonoBehaviour {
 
     private void Die()
     {
+        
         GameGlobal.CountEnemies();
+        if (gameObject.tag == "Enemy") levelController.AddExperience(gameObject.GetComponent<Enemy>().expForKill);
 
         if (baseObject)
         {

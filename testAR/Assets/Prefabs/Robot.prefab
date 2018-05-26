@@ -440,6 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   movementSpeed: 3
+  expForKill: 10
 --- !u!114 &114768666900900358
 MonoBehaviour:
   m_ObjectHideFlags: 1
