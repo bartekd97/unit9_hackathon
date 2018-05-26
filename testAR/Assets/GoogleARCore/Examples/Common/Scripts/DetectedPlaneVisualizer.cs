@@ -30,6 +30,7 @@ namespace GoogleARCore.Examples.Common
     public class DetectedPlaneVisualizer : MonoBehaviour
     {
         private static int s_PlaneCount = 0;
+        
 
         private readonly Color[] k_PlaneColors = new Color[]
         {
@@ -56,7 +57,7 @@ namespace GoogleARCore.Examples.Common
 
         // Keep previous frame's mesh polygon to avoid mesh update every frame.
         private List<Vector3> m_PreviousFrameMeshVertices = new List<Vector3>();
-        private List<Vector3> m_MeshVertices = new List<Vector3>();
+        public List<Vector3> m_MeshVertices = new List<Vector3>();
         private Vector3 m_PlaneCenter = new Vector3();
 
         private List<Color> m_MeshColors = new List<Color>();
