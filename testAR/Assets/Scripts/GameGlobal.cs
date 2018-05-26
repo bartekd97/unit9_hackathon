@@ -4,20 +4,21 @@ using UnityEngine;
 
 public static class GameGlobal {
     #region zmienne
-    private static bool _isGameStarted = false;
+    
+    //private static bool _isGameStarted = false;
     public static bool isGameStarted
     {
         get
         {
-            return _isGameStarted;
+            return true;// _isGameStarted;
         }
     }
-    private static BitcoinMiner _bitcoinMiner;
+    //private static BitcoinMiner _bitcoinMiner;
     public static BitcoinMiner bitcoinMiner
     {
         get
         {
-            return _bitcoinMiner;
+            return GameObject.Find("BitcoinMiner").GetComponent<BitcoinMiner>();//_bitcoinMiner;
         }
     }
 
@@ -77,18 +78,28 @@ public static class GameGlobal {
         BTCToUSD(bitcoinExchange, bitcoinsCurrency);
         return dollarPrice < usdCurrency ? true : false;
     }
-    public static void StartGame(GameObject bitcoinMiner, Vector3 minerPosition, Quaternion minerRotation, Transform parent)
+    /*
+    public static void StartGame(GameObject bitcoinMiner)
     {
         if (_isGameStarted)
             return;
 
-       _bitcoinMiner = (GameObject.Instantiate(bitcoinMiner, minerPosition, minerRotation, parent) as GameObject).GetComponent<BitcoinMiner>();
        _bitcoinMiner = bitcoinMiner.GetComponent<BitcoinMiner>();
-        bitcoinsCurrency = 0;
 
+        bitcoinsCurrency = 0;
         currentLevel = 1;
         totalExperience = 0;
 
         _isGameStarted = true;
     }
+    public static void StopGame()
+    {
+        if (!_isGameStarted)
+            return;
+
+        _bitcoinMiner = null;
+
+        _isGameStarted = false;
+    }
+    */
 }

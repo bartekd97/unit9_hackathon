@@ -18,11 +18,11 @@ public class RobotAI : MonoBehaviour {
     private GameObject bitcoinMiner;
     private const float C_RAYCAST_REFRESH_TIME = 0.25f; // 4 razy na sekunde
 
-    private bool reachedDestination = false;
-    private bool _reachedMiner = false;
+    public bool reachedDestination = false;
+    public bool _reachedMiner = false;
     public bool reachedMiner { get {  return _reachedMiner; } }
-    private bool forceWait = false;
-    private bool keepPathToAction = false;
+    public bool forceWait = false;
+    public bool keepPathToAction = false;
 
 
     private Vector3 toPosition;
@@ -31,7 +31,8 @@ public class RobotAI : MonoBehaviour {
     private float forceWaitSince;
     void Start () {
         bitcoinMiner = GameObject.FindGameObjectWithTag("BitcoinMiner");
-        if (GameGlobal.isGameStarted)
+        RotateToPoint(bitcoinMiner.transform.position);
+        //if (GameGlobal.isGameStarted)
             CalculateMovementDirection();
         _time = Time.time;
         forceWaitSince = Time.time;
@@ -39,7 +40,8 @@ public class RobotAI : MonoBehaviour {
 	
 
 	void Update () {
-        if (!GameGlobal.isGameStarted || _reachedMiner)
+        //if (!GameGlobal.isGameStarted || _reachedMiner)
+        if ( _reachedMiner)
             return;
         float distance = (frontPoint.position - toPosition).magnitude;
         if (distance < maxDistance)
@@ -142,7 +144,7 @@ public class RobotAI : MonoBehaviour {
             }
             else if (hit.distance < maxDistance)
             {
-                SetForceWait(true);
+                TryToCalculateNewPath();
                 return;
             }
             else if (hit.distance < maxDistanceForNewPath && Time.time - forceWaitSince >= C_RAYCAST_REFRESH_TIME*2 )
@@ -222,7 +224,7 @@ public class RobotAI : MonoBehaviour {
     {
         while (_reachedMiner)
         {
-            bitcoinMiner.GetComponent<Health>().SubtractHealth(damagePerTick);
+            GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
             yield return new WaitForSeconds(tickTime);
         }
     }

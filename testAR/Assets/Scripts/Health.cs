@@ -16,6 +16,8 @@ public class Health : MonoBehaviour {
 	
     public void SubtractHealth(float amount)
     {
+        if (currentHealth <= 0)
+            return;
         currentHealth -= amount;
         if (currentHealth <= 0) Die();
     }
