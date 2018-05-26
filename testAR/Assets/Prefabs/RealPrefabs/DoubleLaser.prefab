@@ -1504,8 +1504,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352462562878294}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.6, y: 0, z: 0.2}
-  m_LocalScale: {x: 10, y: 4, z: 1}
+  m_LocalPosition: {x: 1.6, y: 0.58, z: 0.2}
+  m_LocalScale: {x: 10.125, y: 2.7, z: 10.125}
   m_Children:
   - {fileID: 4507909488678282}
   - {fileID: 4824090196590622}
@@ -1672,7 +1672,7 @@ Transform:
   m_GameObject: {fileID: 1546350430928892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0.52, z: 0.16}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4180614294409030}
   - {fileID: 4498136402785324}
@@ -1717,7 +1717,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1699745086186082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.394}
+  m_LocalPosition: {x: 0, y: 0.09, z: -0.394}
   m_LocalScale: {x: 0.02, y: 0.075, z: 0.02}
   m_Children:
   - {fileID: 4670374447355970}
@@ -1762,7 +1762,7 @@ Transform:
   m_GameObject: {fileID: 1569465235238812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children:
   - {fileID: 224169897915179872}
   m_Father: {fileID: 4008365899794876}
@@ -1817,7 +1817,7 @@ Transform:
   m_GameObject: {fileID: 1205939866680096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.4, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4992668561369428}
   - {fileID: 224125736660523228}
@@ -1849,7 +1849,7 @@ Transform:
   m_GameObject: {fileID: 1078257483655040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5289998, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4521518201537442}
   - {fileID: 4518670121624040}
@@ -2858,7 +2858,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114014181189263954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2949,7 +2949,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: Sell
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 6dc88f35665b4f942902d3afc784ab49, type: 3}
 --- !u!114 &114066058520612536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3031,7 +3031,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114086103903635116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3116,7 +3116,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114110558360815882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3210,7 +3210,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114135624984239674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3853,7 +3853,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114399338907600916
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3895,7 +3895,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114417978413869444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4365,7 +4365,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 8e47fd205fe824a4fb28c89b8c4ab012, type: 3}
 --- !u!114 &114599291400427546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4564,7 +4564,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: UpgradeSentry
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114642844384853518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4796,7 +4796,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114756295217203856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4975,7 +4975,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: TriggerShot
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: b98126ba0d85df04faa369b3c521071e, type: 3}
 --- !u!114 &114797970958982058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5474,7 +5474,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
-  sfx: {fileID: 0}
+  sfx: {fileID: 8300000, guid: 875a11baed82abc4d96973bf6eeeb822, type: 3}
 --- !u!114 &114975191651999532
 MonoBehaviour:
   m_ObjectHideFlags: 1
