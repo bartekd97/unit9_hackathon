@@ -407,6 +407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4283624906980090}
   - component: {fileID: 114466100354904612}
+  - component: {fileID: 114473716379771976}
   m_Layer: 0
   m_Name: ShopMenu
   m_TagString: Untagged
@@ -627,6 +628,7 @@ GameObject:
   - component: {fileID: 4368226737649988}
   - component: {fileID: 114067838501683992}
   - component: {fileID: 114467303126986488}
+  - component: {fileID: 114903038357393064}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -1974,6 +1976,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114473716379771976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1547164627412266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a811ffcb729c74ea406f5d8c767a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114479106413508122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2487,6 +2500,17 @@ MonoBehaviour:
   NextMenu: {fileID: 1547164627412266}
   Menu: {fileID: 1742502627593796}
   NextScene: 
+--- !u!114 &114903038357393064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1742502627593796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a811ffcb729c74ea406f5d8c767a66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114929388145105836
 MonoBehaviour:
   m_ObjectHideFlags: 1

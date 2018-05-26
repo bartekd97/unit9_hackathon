@@ -229,6 +229,8 @@
     <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuOpenManager.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuTextIconUpdater.cs" />
+    <Compile Include="Assets\Scripts\Menu\MenuWindow.cs" />
+    <Compile Include="Assets\Scripts\Menu\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
