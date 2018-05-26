@@ -5,7 +5,7 @@ public class MainScript : MonoBehaviour {
     public GameObject bitcoinMinerPrefab;
 
 	void Start () {
-        GameGlobal.StartGame(bitcoinMinerPrefab, transform, Vector3.forward*20, Quaternion.identity);
+        //GameGlobal.StartGame(bitcoinMinerPrefab, transform, Vector3.forward*20, Quaternion.identity);
         //Instantiate(robotPrefab, robotPortal.position, robotPortal.rotation, robotPortal);
     }
 }

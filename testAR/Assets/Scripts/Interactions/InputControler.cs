@@ -6,7 +6,13 @@ using System;
 using UnityEngine.UI;
 
 public class InputControler : MonoBehaviour {
-    
+
+    public GoogleARCore.Examples.HelloAR.HelloARController helloARController;
+    private void Start()
+    {
+        helloARController.enabled = false;
+    }
+
     void Update() {
         foreach (var touch in Input.touches)
         {

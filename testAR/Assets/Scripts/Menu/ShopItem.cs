@@ -12,8 +12,8 @@ public class ShopItem : MonoBehaviour {
     public MenuIconContainer icon;
 
 	void Update () {
-        if (!GameGlobal.isGameStarted)
-            return;
+        //if (!GameGlobal.isGameStarted)
+          //  return;
 
         nameText.text = name;
         priceText.text = "$" + price.ToString();

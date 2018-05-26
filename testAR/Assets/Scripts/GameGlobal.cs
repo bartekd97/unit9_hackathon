@@ -33,12 +33,13 @@ public static class GameGlobal {
         enemiesOnTheScene = GameObject.Find("Enemies").transform.childCount;
     }
 
-    public static void StartGame( GameObject miner, Transform parent, Vector3 minerPosition, Quaternion minerRotation )
+    public static void StartGame(GameObject bitcoinMiner)
     {
         if (_isGameStarted)
             return;
 
-        _bitcoinMiner = (GameObject.Instantiate(miner, minerPosition, minerRotation, parent) as GameObject).GetComponent<BitcoinMiner>();
+       // _bitcoinMiner = (GameObject.Instantiate(miner, minerPosition, minerRotation, parent) as GameObject).GetComponent<BitcoinMiner>();
+       _bitcoinMiner = bitcoinMiner.GetComponent<BitcoinMiner>();
         bitcoinsCurrency = 0;
 
         _isGameStarted = true;

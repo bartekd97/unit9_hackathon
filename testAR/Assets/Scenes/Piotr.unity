@@ -183,7 +183,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 316840191}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c669a4cc43174caea1a3748b76f2652, type: 3}
   m_Name: 
@@ -319,8 +319,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 80, y: 0}
-  m_SizeDelta: {x: 600.4, y: 31.5}
+  m_AnchoredPosition: {x: 80, y: 0.0002346}
+  m_SizeDelta: {x: 2075.9, y: 156.4}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &450099953
 MonoBehaviour:
@@ -343,12 +343,12 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 612af59c1938abb44b6af5de32f6bb94, type: 3}
-    m_FontSize: 20
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 72
-    m_Alignment: 0
+    m_MaxSize: 90
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -449,6 +449,7 @@ RectTransform:
   - {fileID: 1980426488}
   - {fileID: 859827097}
   - {fileID: 2051405868}
+  - {fileID: 1162939647}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -617,10 +618,9 @@ MonoBehaviour:
   FirstPersonCamera: {fileID: 2020185657}
   DetectedPlanePrefab: {fileID: 1654175882956584, guid: 6a35c744e5010405c847fad90282d2be,
     type: 2}
-  AndyAndroidPrefab: {fileID: 1190091649889860, guid: 242a320930b81430ba610f94f9b760c8,
+  AndyAndroidPrefab: {fileID: 1713018623893386, guid: c91a664818351c64a8720ef428678df9,
     type: 2}
-  DefenseUnitPrefab: {fileID: 1343690034186562, guid: be73d714faa88464782aa93807ea27e4,
-    type: 2}
+  DefenseUnitPrefab: {fileID: 100002, guid: 4633f2077f9e05c4b915f89b062b9ad7, type: 3}
   SearchingForPlaneUI: {fileID: 1980426487}
   check: 0
   placeMode: 0
@@ -629,6 +629,7 @@ MonoBehaviour:
   spawn: {fileID: 0}
   menu: {fileID: 1145017456255248, guid: db295d43a30558c44a277f26c0b4ea3c, type: 2}
   inputControler: {fileID: 1532544784}
+  touches: {fileID: 1162939648}
 --- !u!4 &864982790
 Transform:
   m_ObjectHideFlags: 0
@@ -669,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8180f789c89ea04facbb1b1d553fefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planeGenerator: {fileID: 316840192}
+  detectedPlaneGenerator: {fileID: 316840192}
   helloARController: {fileID: 864982789}
   stopScanTerrain: {fileID: 2051405869}
   Canvas: {fileID: 784294230}
@@ -754,6 +755,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 60, y: 30, z: 0}
+--- !u!1 &1162939646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1162939647}
+  - component: {fileID: 1162939649}
+  - component: {fileID: 1162939648}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1162939647
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162939646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 784294234}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -934.32, y: -605}
+  m_SizeDelta: {x: 434.2, y: 230}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1162939648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162939646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: d53839ed2e6d19346aa6df3d21caba08, type: 3}
+    m_FontSize: 220
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 245
+    m_Alignment: 5
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 99
+--- !u!222 &1162939649
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162939646}
 --- !u!1 &1390505083
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da721a1967c19ee41b20cdbff1f96059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  helloARController: {fileID: 864982789}
 --- !u!1 &1980426487
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,8 +953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 15.700012}
-  m_SizeDelta: {x: 0, y: 31.5}
+  m_AnchoredPosition: {x: 0, y: 78.17505}
+  m_SizeDelta: {x: 0, y: 156.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980426489
 MonoBehaviour:
