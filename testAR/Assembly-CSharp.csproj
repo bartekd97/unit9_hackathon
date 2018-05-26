@@ -217,7 +217,6 @@
     <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
     <Compile Include="Assets\Scripts\BitcoinPrice.cs" />
     <Compile Include="Assets\Scripts\ChartController.cs" />
-    <Compile Include="Assets\Scripts\Debugging\DebugTeleporters.cs" />
     <Compile Include="Assets\Scripts\EnemiesSpawnController.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameGlobal.cs" />
@@ -236,6 +235,7 @@
     <Compile Include="Assets\Scripts\Menu\ShopItem.cs" />
     <Compile Include="Assets\Scripts\RobotAI.cs" />
     <Compile Include="Assets\Scripts\SentryGunController.cs" />
+    <Compile Include="Assets\Scripts\Shop.cs" />
     <Compile Include="Assets\Scripts\Utility\LookAt.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />

@@ -34,9 +34,10 @@ public class BitcoinPrice : MonoBehaviour {
     {
         calcIndex %= 3;
         if (calcIndex == 0) RandomizeCompartment();
-
+        
         bitcoinPrice = Random.Range(minComp, maxComp);
-        GameGlobal.bitcointExchange = bitcoinPrice;
+        GameGlobal.bitcoinExchange = bitcoinPrice;
+        GameGlobal.BTCToUSD(GameGlobal.bitcoinExchange, GameGlobal.bitcoinsCurrency);
         calcIndex++;
     }
     IEnumerator CalculatingLoop()

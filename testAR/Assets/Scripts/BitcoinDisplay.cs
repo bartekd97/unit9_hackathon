@@ -12,6 +12,6 @@ public class BitcoinDisplay : MonoBehaviour {
 	
 	
 	void Update () {
-        display.text = "BTC: " + GameGlobal.bitcoinsCurrency.ToString() + "\n$: " + (GameGlobal.bitcoinsCurrency * GameGlobal.bitcointExchange).ToString();
+        display.text = "BTC: " + GameGlobal.bitcoinsCurrency.ToString() + "\n$: " + GameGlobal.usdCurrency.ToString();
 	}
 }
