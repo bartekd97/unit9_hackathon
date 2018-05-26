@@ -52,6 +52,7 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
+                bitcoinMiner.GetComponent<BitcoinMiner>().SetParticlesState(true);
                 StartCoroutine(DamageDealing());
                 return;
             }
