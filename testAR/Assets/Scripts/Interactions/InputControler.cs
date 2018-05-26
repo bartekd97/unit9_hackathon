@@ -8,9 +8,11 @@ using UnityEngine.UI;
 public class InputControler : MonoBehaviour {
 
     public GoogleARCore.Examples.HelloAR.HelloARController helloARController;
-    private void Start()
+
+    public void Start()
     {
-        helloARController.enabled = false;
+       helloARController.placeMode = 3;
+       helloARController.enabled = false;
     }
 
     void Update() {
@@ -18,7 +20,7 @@ public class InputControler : MonoBehaviour {
         {
             Shoot(touch.position);
         }
-        int a = (0 == 0) ? 0 : 2;
+       // int a = (0 == 0) ? 0 : 2;
     }
 
     void Shoot(Vector2 screenPoint)

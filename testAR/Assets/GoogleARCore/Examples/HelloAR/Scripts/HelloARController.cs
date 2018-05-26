@@ -26,6 +26,9 @@ namespace GoogleARCore.Examples.HelloAR
     using UnityEngine;
     using UnityEngine.UI;
 
+    using System.Reflection;
+    using System;
+
 #if UNITY_EDITOR
     // Set up touch input propagation while using Instant Preview in the editor.
     using Input = InstantPreviewInput;
@@ -93,10 +96,9 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject spawn;
 
         public GameObject menu;
-
-        public InputControler inputControler;
-
-        public Text touches;
+        
+        public Text tekst;
+        
 
         private void Start()
         {
@@ -124,7 +126,7 @@ namespace GoogleARCore.Examples.HelloAR
                 laserCrosshair.enabled = false;
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
-            touches.text = (Input.touchCount).ToString();
+            tekst.text = Input.touchCount.ToString();
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
             if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
@@ -138,39 +140,51 @@ namespace GoogleARCore.Examples.HelloAR
                 switch (placeMode)
                 {
                     case 0:
-                        if (!check)
-                        {
-                            spawn = AndyAndroidPrefab;
-                            ustawBudynki(spawn);
-
-                            check = true;
-                        }
-                        else
-                        {
-                            spawn = DefenseUnitPrefab;
-                            ustawBudynki(spawn);
-                        }
+                        spawn = AndyAndroidPrefab;
+                        ustawBudynki(spawn);
+                        placeMode = 3;
+                       // inputControler.enabled = true;
+                        //placeMode = 4;
+                        //ustawianie koparki
                         break;
-
                     case 1:
                         laser();
+                        //laser XD
                         break;
                     case 2:
-                        Debug.Log("Dupa");
                         spawn = menu;
                         ustawBudynki(spawn);
-                        placeMenu = true;
-
-                        inputControler.enabled = true;
-                       
+                        placeMode = 0;
+                        //ustawianie menu
+                        break;
+                    case 3:
+                        Shoot(touch.position);
+                        break;
+                    case 4:
+                        spawn = DefenseUnitPrefab;
+                        ustawBudynki(spawn);
+                        //ustawianie obrony
                         break;
 
 
                 }
             }
+        }
 
-
-            
+        void Shoot(Vector2 screenPoint)
+        {
+            var ray = Camera.main.ScreenPointToRay(screenPoint);
+            var hitInfo = new RaycastHit();
+            if (Physics.Raycast(ray, out hitInfo))
+            {
+                var script = hitInfo.transform.gameObject.GetComponent("Interactable");
+                if (script != null)
+                {
+                    Type t = Type.GetType("Interactable");
+                    MethodInfo method = t.GetMethod("OnTap");
+                    method.Invoke(script, null);
+                }
+            }
         }
 
         void setGameObject(GameObject Object)
@@ -198,7 +212,7 @@ namespace GoogleARCore.Examples.HelloAR
                 {
                         var andyObject = Instantiate(spawn, hit.Pose.position, hit.Pose.rotation);
 
-                    if(!check)
+                    
                         //GameGlobal.StartGame(andyObject);
                     // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                         andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);

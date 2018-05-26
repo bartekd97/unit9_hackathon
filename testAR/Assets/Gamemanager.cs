@@ -16,16 +16,14 @@ namespace GoogleARCore.Examples.HelloAR
         public GameObject Canvas;
         public GameObject stopScanTerrainObject;
         public Button[] buttons;
-        public InputControler inputControler;
+       
         // Use this for initialization
         void Start()
         {
-           
-            helloARController.enabled = false;
             Canvas = GameObject.FindGameObjectWithTag("Canvas");
             findButons();
             stopScanTerrain.onClick.AddListener(disableScanning);
-            GetComponent<Gamemanager>().enabled = false;
+           
         }
 
         // Update is called once per frame
@@ -53,7 +51,7 @@ namespace GoogleARCore.Examples.HelloAR
         public void StartGame()
         {
             helloARController.placeMode = 0;
-            helloARController.enabled = true;
+           
         }
 
 
@@ -67,8 +65,9 @@ namespace GoogleARCore.Examples.HelloAR
                 plane[i].enabled = false;
             }
             helloARController.enabled = true;
-            stopScanTerrainObject.SetActive(false);
             helloARController.placeMode = 2;
+            stopScanTerrainObject.SetActive(false);
+           // inputControler.enabled = false;
         }
 
     }
