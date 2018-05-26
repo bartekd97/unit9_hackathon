@@ -13,6 +13,7 @@ public class MenuIconContainer : MonoBehaviour {
     public Sprite disabledIcon;
     public Sprite hoverIcon;
     public UnityEngine.UI.Image image;
+    public bool disableClickOnHover = false;
 
     public Interactable interactable;
 
@@ -39,6 +40,8 @@ public class MenuIconContainer : MonoBehaviour {
         if (interactable)
         {
             if (type == IconType.Disabled)
+                interactable.isInteractable = false;
+            else if (type == IconType.Hover && disableClickOnHover)
                 interactable.isInteractable = false;
             else
                 interactable.isInteractable = true;
