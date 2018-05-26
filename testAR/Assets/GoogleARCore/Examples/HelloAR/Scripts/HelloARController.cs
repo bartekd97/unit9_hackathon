@@ -96,6 +96,8 @@ namespace GoogleARCore.Examples.HelloAR
 
         public InputControler inputControler;
 
+        public Text touches;
+
         private void Start()
         {
             //spawn = DefenseUnitPrefab;
@@ -104,7 +106,7 @@ namespace GoogleARCore.Examples.HelloAR
         public void Update()
         {
             _UpdateApplicationLifecycle();
-
+            
             // Hide snackbar when currently tracking at least one plane.
             Session.GetTrackables<DetectedPlane>(m_AllPlanes);
             bool showSearchingUI = true;
@@ -122,30 +124,17 @@ namespace GoogleARCore.Examples.HelloAR
                 laserCrosshair.enabled = false;
 
             SearchingForPlaneUI.SetActive(showSearchingUI);
-
+            touches.text = (Input.touchCount).ToString();
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
             if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
             {
                 return;
             }
-
-            // Raycast against the location the player touched to search for planes.
-            if (!placeMenu)
-            {
-                Debug.Log("Dupa");
-                spawn = menu;
-                ustawBudynki(spawn);
-                placeMenu = true;
-                GetComponent<HelloARController>().enabled = false;
-                inputControler.enabled = true;
-                
- 
-            }
             else
             {
-
-
+             // Raycast against the location the player touched to search for planes.
+                
                 switch (placeMode)
                 {
                     case 0:
@@ -153,6 +142,7 @@ namespace GoogleARCore.Examples.HelloAR
                         {
                             spawn = AndyAndroidPrefab;
                             ustawBudynki(spawn);
+
                             check = true;
                         }
                         else
@@ -170,14 +160,17 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = menu;
                         ustawBudynki(spawn);
                         placeMenu = true;
-                        GetComponent<HelloARController>().enabled = false;
+
                         inputControler.enabled = true;
-                        placeMode = 0;
+                       
                         break;
 
 
                 }
             }
+
+
+            
         }
 
         void setGameObject(GameObject Object)
@@ -203,13 +196,11 @@ namespace GoogleARCore.Examples.HelloAR
                 }
                 else
                 {
-                    // Instantiate Andy model at the hit pose.
-                    
-
-
                         var andyObject = Instantiate(spawn, hit.Pose.position, hit.Pose.rotation);
 
-                        // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
+                    if(!check)
+                        GameGlobal.StartGame(andyObject);
+                    // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                         andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
                         // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
@@ -218,9 +209,7 @@ namespace GoogleARCore.Examples.HelloAR
 
                         // Make Andy model a child of the anchor.
                         andyObject.transform.parent = anchor.transform;
-
-                       
-                    
+                                            
                 }
             }
         }

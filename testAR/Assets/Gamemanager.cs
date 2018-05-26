@@ -10,8 +10,7 @@ namespace GoogleARCore.Examples.HelloAR
 
     public class Gamemanager : MonoBehaviour
     {
-
-        public DetectedPlaneGenerator planeGenerator;
+        public DetectedPlaneGenerator detectedPlaneGenerator;
         public HelloARController helloARController;
         public Button stopScanTerrain;
         public GameObject Canvas;
@@ -21,7 +20,7 @@ namespace GoogleARCore.Examples.HelloAR
         // Use this for initialization
         void Start()
         {
-            planeGenerator.enabled = true;
+           
             helloARController.enabled = false;
             Canvas = GameObject.FindGameObjectWithTag("Canvas");
             findButons();
@@ -53,16 +52,20 @@ namespace GoogleARCore.Examples.HelloAR
 
         public void StartGame()
         {
-            helloARController.enabled = true;
             helloARController.placeMode = 0;
-            planeGenerator.enabled = false;
+            helloARController.enabled = true;
         }
 
 
 
         void disableScanning()
         {
-            planeGenerator.enabled = false;
+            detectedPlaneGenerator.enabled = false;
+            DetectedPlaneVisualizer[] plane = FindObjectsOfType<DetectedPlaneVisualizer>();
+            for (int i = 0; i < plane.Length; i++)
+            {
+                plane[i].enabled = false;
+            }
             helloARController.enabled = true;
             stopScanTerrainObject.SetActive(false);
             helloARController.placeMode = 2;
