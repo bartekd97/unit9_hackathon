@@ -23,6 +23,7 @@ public static class GameGlobal {
     }
 
     public static int enemiesOnTheScene = -1;
+    public static int playerTokens = 0;
     public static float bitcoinsCurrency = 0;
     public static float bitcointExchange;
     #endregion

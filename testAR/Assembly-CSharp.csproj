@@ -224,6 +224,7 @@
     <Compile Include="Assets\Scripts\Interactions\InputControler.cs" />
     <Compile Include="Assets\Scripts\Interactions\Interactable.cs" />
     <Compile Include="Assets\Scripts\LaserRayController.cs" />
+    <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\MainScript.cs" />
     <Compile Include="Assets\Scripts\Menu\CaptureMenu.cs" />
     <Compile Include="Assets\Scripts\Menu\MenuIconContainer.cs" />
@@ -251,6 +252,12 @@
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Editor">
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Runtime">
+      <HintPath>E:/GitHubRepositories/SVNs/unit9vrvh18/testAR/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour {
     public Dictionary<string, bool> affectedBy = new Dictionary<string, bool>();
     public float damage;
     public float movementSpeed;
+    public int expForKill;
 
     private float movementSpeedHolder;
     private bool onFire;

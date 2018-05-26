@@ -22,4 +22,10 @@ public class BitcoinMiner : MonoBehaviour {
             GameGlobal.bitcoinsCurrency += MinerAmount;
         }
 	}
+
+    public void LeveledUp()
+    {
+        if(gameObject.GetComponent<LevelController>().currentLevel > 2) MinerTick /= gameObject.GetComponent<LevelController>().currentLevel - 1;
+        MinerTick *= gameObject.GetComponent<LevelController>().currentLevel;
+    }
 }
