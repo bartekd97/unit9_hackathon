@@ -2849,6 +2849,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114039781934953578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2876,6 +2877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114049276686852352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3074,6 +3077,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114108765115630910
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3115,6 +3119,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: Sell
+  sfx: {fileID: 0}
 --- !u!114 &114118252516050870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3235,6 +3240,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114156835220932598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3474,6 +3481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114258968102571422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3488,6 +3497,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114260489263629248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3722,6 +3732,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114326329161645862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3769,6 +3780,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114343111927523722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3932,6 +3944,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: UpgradeSentry
+  sfx: {fileID: 0}
 --- !u!114 &114426914263155412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3993,6 +4006,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114462842874542124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4038,6 +4053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114499899723465980
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4369,6 +4386,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: UIButton
   nameOfMethod: TriggerShot
+  sfx: {fileID: 0}
 --- !u!114 &114645399515281892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4456,6 +4474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114692049693682958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4701,6 +4721,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114788586750077374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5147,6 +5169,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114901199031200436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5207,6 +5230,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!114 &114917638043421676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5242,6 +5267,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114925718430612662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5326,6 +5352,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114939989102405476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5443,6 +5470,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114968755183661328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5508,6 +5536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFlatSentry: 0
+  sentryParent: {fileID: 1209240798687648}
 --- !u!136 &136423522290445336
 CapsuleCollider:
   m_ObjectHideFlags: 1

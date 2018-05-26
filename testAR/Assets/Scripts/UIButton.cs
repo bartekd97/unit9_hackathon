@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIButton : MonoBehaviour {
+    public bool isFlatSentry;
 
-    private GameObject sentryParent;
+    public GameObject sentryParent;
     private Shop shop;
     private void Start()
     {
         shop = GameObject.Find("Shop").GetComponent<Shop>();
-        sentryParent = gameObject.transform.parent.parent.parent.gameObject;
     }
     public void TriggerShot()
     {
@@ -28,7 +28,14 @@ public class UIButton : MonoBehaviour {
     public void Sell()
     {
         GameGlobal.AddCash("usd", Mathf.RoundToInt(shop.prices["SentryLevelUp"] / 3));
-        Destroy(sentryParent, 0.2f);
+        if (isFlatSentry)
+        {
+            Destroy(sentryParent.transform.parent.gameObject, 0.2f);
+        }
+        else
+        {
+            Destroy(sentryParent, 0.2f);
+        }
     }
 
     //public void BuyPowerUp()

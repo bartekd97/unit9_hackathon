@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 114848708045481360}
   - component: {fileID: 114721404322476986}
   - component: {fileID: 114948307229997426}
+  - component: {fileID: 114504658380512926}
   m_Layer: 0
   m_Name: sell
   m_TagString: Untagged
@@ -821,6 +822,7 @@ GameObject:
   - component: {fileID: 114017237802014020}
   - component: {fileID: 114134493039784384}
   - component: {fileID: 114857503561813476}
+  - component: {fileID: 114149000113286590}
   m_Layer: 0
   m_Name: shoot
   m_TagString: Untagged
@@ -934,6 +936,7 @@ GameObject:
   - component: {fileID: 114374413736216918}
   - component: {fileID: 114753806505352676}
   - component: {fileID: 114691662490598880}
+  - component: {fileID: 114398181405412066}
   m_Layer: 0
   m_Name: levelup
   m_TagString: Untagged
@@ -2552,8 +2555,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractable: 1
-  nameOfClass: CaptureMenu
-  nameOfMethod: Capture
+  nameOfClass: UIButton
+  nameOfMethod: TriggerShot
+  sfx: {fileID: 0}
 --- !u!114 &114026438534041052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2739,6 +2743,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114149000113286590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1551906588707078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlatSentry: 1
+  sentryParent: {fileID: 1876251693619176}
 --- !u!114 &114166731008513544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3219,6 +3236,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114374413736216918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3230,9 +3248,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff696f976b3d1d4e9b13901d1cd41a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  nameOfClass: 
-  nameOfMethod: 
+  isInteractable: 1
+  nameOfClass: UIButton
+  nameOfMethod: UpgradeSentry
+  sfx: {fileID: 0}
 --- !u!114 &114390695219378146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3298,6 +3317,19 @@ MonoBehaviour:
   Menu: {fileID: 1544483211310794}
   info: {fileID: 0}
   NextScene: 
+--- !u!114 &114398181405412066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642417779436888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlatSentry: 1
+  sentryParent: {fileID: 1876251693619176}
 --- !u!114 &114414932948386818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3494,6 +3526,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114480028560950142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3527,6 +3560,19 @@ MonoBehaviour:
   image: {fileID: 114696575880304972}
   disableClickOnHover: 0
   interactable: {fileID: 114469313258006924}
+--- !u!114 &114504658380512926
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1058901132909912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51106fa022607aa4fb4558eaf4250493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFlatSentry: 1
+  sentryParent: {fileID: 1876251693619176}
 --- !u!114 &114516630283591930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4016,6 +4062,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114691662490598880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4101,6 +4148,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114708461690958368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4115,6 +4163,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114711459346828382
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4199,6 +4248,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114740886480149824
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4386,6 +4436,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114773806353941146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4500,6 +4551,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: PowerupItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114834512166611538
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4549,9 +4601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff696f976b3d1d4e9b13901d1cd41a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  nameOfClass: 
-  nameOfMethod: 
+  isInteractable: 1
+  nameOfClass: UIButton
+  nameOfMethod: Sell
+  sfx: {fileID: 0}
 --- !u!114 &114851384472439806
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4772,6 +4825,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114899829111843352
 MonoBehaviour:
   m_ObjectHideFlags: 1
