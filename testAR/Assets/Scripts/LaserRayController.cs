@@ -8,15 +8,22 @@ public class LaserRayController : MonoBehaviour {
     public float damage;
 
     private bool enemyInRay;
+    private SentryGunController sentryController;
 
     private void Start()
     {
         enemyInRay = false;
+        sentryController = gameObject.transform.parent.gameObject.GetComponent<SentryGunController>();
     }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Enemy")
         {
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            if (sentryController.powerUps["SlowDown"] && !enemy.affectedBy["SlowDown"]) enemy.SlowDownEffect(sentryController.powerUpsValues["SlowDown"]);
+            if (sentryController.powerUps["Weaken"] && !enemy.affectedBy["Weaken"]) enemy.WeakenEffect(sentryController.powerUpsValues["Weaken"]);
+            if (sentryController.powerUps["Fire"] && !enemy.affectedBy["Fire"]) enemy.FireEffect(sentryController.powerUpsValues["Fire"], 3f, 0.3f);
+            if (sentryController.powerUps["Freeze"] && !enemy.affectedBy["Freeze"]) enemy.FreezeEffect(sentryController.powerUpsValues["Freeze"]);
             enemyInRay = true;
             StartCoroutine(DealingDamage(other.gameObject.GetComponent<Health>()));
         }
