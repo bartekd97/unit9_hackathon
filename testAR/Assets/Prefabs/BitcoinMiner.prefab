@@ -975,7 +975,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1713481808900262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6259956, y: -1.605433, z: 0.8364571}
+  m_LocalPosition: {x: -4.191133, y: -5.233639, z: 7.6614347}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 4355960002944962}
@@ -1901,7 +1901,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41723ebe6bdc4b41a0d62989654ccae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinerTick: 0.5
+  MinerTick: 0.6
   MinerAmount: 1
   sparksParticles: {fileID: 1236517045318278}
 --- !u!114 &114170237073653884
