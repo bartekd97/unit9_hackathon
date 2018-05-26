@@ -9,20 +9,28 @@ public class SpawnTeleports : MonoBehaviour
     public GameObject TeleportToSpawn;
     public List<GameObject> AllSpawnedTeleports;
 
+    public bool checkMiner;
+
     private GameObject computer;
     private List<Vector3> vertexes;
     private Vector3 center;
     private GameObject plane;
     private Vector3 destination;
 
+
+
     public void StartSpawning()
     {
-        computer = GameObject.FindGameObjectWithTag("computer");
+        bool spawn;
+        computer = GameObject.FindGameObjectWithTag("BitcoinMiner") ?? null ;
 
-        if (computer == null)
+        if (checkMiner)
         {
-            Debug.Log("Komputera nie ma");
-            return;
+            if (computer == null)
+            {
+                Debug.Log("Komputera nie ma");
+                return;
+            }
         }
 
         plane = gameObject.transform.GetChild(0).gameObject;
@@ -38,21 +46,25 @@ public class SpawnTeleports : MonoBehaviour
 
         for (int i = 0; i < vertexes.Count; i++)
         {
+            spawn = true;
             Vector3 avg = new Vector3(vertexes[i].x + vertexes[(i + 1) % vertexes.Count].x + center.x, vertexes[i].y + vertexes[(i + 1) % vertexes.Count].y + center.y, vertexes[i].z + vertexes[(i + 1) % vertexes.Count].z + center.z) / 3;
             destination = avg;
 
-
-            if (Vector3.Distance(destination, computer.transform.position) < 1 && Vector3.Distance(destination, computer.transform.position) > -1)
+            if (computer != null && checkMiner)
             {
-                continue;
+                if (Vector3.Distance(destination, computer.transform.position) < 1 && Vector3.Distance(destination, computer.transform.position) > -1)
+                {
+                    continue;
+                }
             }
 
             if (AllSpawnedTeleports != null)
             {
                 foreach (GameObject GO in AllSpawnedTeleports)
                 {
-                    if (Vector3.Distance(GO.transform.position, destination) < 1 && Vector3.Distance(GO.transform.position, destination) > -1)
+                    if (Vector3.Distance(GO.transform.position, destination) < 0.5f && Vector3.Distance(GO.transform.position, destination) > -0.5f)
                     {
+                        spawn = false;
                         continue;
                     }
                 }
@@ -62,7 +74,8 @@ public class SpawnTeleports : MonoBehaviour
                 Debug.Log("Nie me teleportow jeszcze");
             }
 
-            AllSpawnedTeleports.Add(Instantiate(TeleportToSpawn, destination, Quaternion.identity));
+            if(spawn)
+                AllSpawnedTeleports.Add(Instantiate(TeleportToSpawn, destination + new Vector3(0.0f, 0.01f, 0.0f), Quaternion.Euler(0.0f, Random.Range(0.0f, 360.0f), 0.0f)));
         }
     }
 }

@@ -104,7 +104,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         private void Start()
         {
-            GameGlobal.AddCash("dollar", 2000000);
+            GameGlobal.AddCash("btc", 2);
             //spawn = DefenseUnitPrefab;
         }
 
