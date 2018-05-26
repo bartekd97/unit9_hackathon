@@ -39,7 +39,6 @@ public class RobotAI : MonoBehaviour {
 	
 
 	void Update () {
-        Debug.Log("Going to " + toPosition);
         if (!GameGlobal.isGameStarted || _reachedMiner)
             return;
         float distance = (frontPoint.position - toPosition).magnitude;
@@ -125,7 +124,6 @@ public class RobotAI : MonoBehaviour {
         {
             //toPosition = GameGlobal.bitcoinMiner.transform.position;
             toPosition = bitcoinMiner.transform.position;
-            Debug.Log("I see Bitcoin Miner at " + toPosition);
             if (keepPathToAction)
             {
                 RotateToPoint(toPosition);
