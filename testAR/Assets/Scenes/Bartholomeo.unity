@@ -113,40 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &113794304 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1087059437232034, guid: db295d43a30558c44a277f26c0b4ea3c,
-    type: 2}
-  m_PrefabInternal: {fileID: 453953398}
---- !u!114 &113794306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 113794304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ff696f976b3d1d4e9b13901d1cd41a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 1
-  nameOfClass: CaptureMenu
-  nameOfMethod: Capture
---- !u!114 &113794309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 113794304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 147d7863546498d4583e37f8ebb01cc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mode: 2
-  NextMenu: {fileID: 0}
-  Menu: {fileID: 0}
-  NextScene: 
 --- !u!1001 &161097728
 Prefab:
   m_ObjectHideFlags: 0
@@ -189,25 +155,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf498fc35b538884db557f7a9a2c0ef9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &222261183 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1117851003324904, guid: db295d43a30558c44a277f26c0b4ea3c,
-    type: 2}
-  m_PrefabInternal: {fileID: 453953398}
---- !u!114 &222261189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 222261183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ff696f976b3d1d4e9b13901d1cd41a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isInteractable: 1
-  nameOfClass: CaptureMenu
-  nameOfMethod: Capture
 --- !u!1001 &453953398
 Prefab:
   m_ObjectHideFlags: 0
@@ -247,33 +194,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114918852035936536, guid: db295d43a30558c44a277f26c0b4ea3c,
-        type: 2}
-      propertyPath: Menu
-      value: 
-      objectReference: {fileID: 453953399}
-    - target: {fileID: 114918852035936536, guid: db295d43a30558c44a277f26c0b4ea3c,
-        type: 2}
-      propertyPath: mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114918852035936536, guid: db295d43a30558c44a277f26c0b4ea3c,
-        type: 2}
-      propertyPath: NextMenu
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1145017456255248, guid: db295d43a30558c44a277f26c0b4ea3c, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db295d43a30558c44a277f26c0b4ea3c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &453953399 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1145017456255248, guid: db295d43a30558c44a277f26c0b4ea3c,
-    type: 2}
-  m_PrefabInternal: {fileID: 453953398}
 --- !u!1 &1906551027 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1637996540812124, guid: c10877f7cd5764de18d46d7b777d1faa,

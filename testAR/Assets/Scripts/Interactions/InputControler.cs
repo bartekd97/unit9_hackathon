@@ -12,6 +12,7 @@ public class InputControler : MonoBehaviour {
         {
             Shoot(touch.position);
         }
+        int a = (0 == 0) ? 0 : 2;
     }
 
     void Shoot(Vector2 screenPoint)
