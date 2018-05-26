@@ -11,6 +11,7 @@ public class RobotAI : MonoBehaviour {
     public float maxFrontSideDistance = 2f; // minimalny dystans z frontu na skos
     public float forceWaitTimeToNewPath = 2f; // czas jaki uplynie zanim nastapi proba wyznaczenia nowej sciezki jesli robot sie zablokuje
     public float minimumDistanceForNewPath = 4f; // minimalny dystans do przebycia na nowej sciezce (w praktyce jest pomniejszony o maxDistance)
+
     public float damagePerTick;
     public float tickTime;
 

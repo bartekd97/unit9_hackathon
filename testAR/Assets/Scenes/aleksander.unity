@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68229c43cd7450c43ac516472401b8d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bitcoinMinerPrefab: {fileID: 1038613097534960, guid: 3744db6404d438a48bbf4e69c899b407,
+  bitcoinMinerPrefab: {fileID: 1213879371716292, guid: 3744db6404d438a48bbf4e69c899b407,
     type: 2}
 --- !u!4 &309339228
 Transform:
@@ -381,7 +381,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309339225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3401465, y: 4.27031, z: 5.0947084}
+  m_LocalPosition: {x: -21.33, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
