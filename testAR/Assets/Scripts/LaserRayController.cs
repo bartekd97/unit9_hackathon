@@ -19,17 +19,35 @@ public class LaserRayController : MonoBehaviour {
     {
         if(other.gameObject.tag == "Enemy")
         {
-            Enemy enemy = other.gameObject.GetComponent<Enemy>();
-            if (sentryController.powerUps["SlowDown"] && !enemy.affectedBy["SlowDown"]) enemy.SlowDownEffect(sentryController.powerUpsValues["SlowDown"]);
-            if (sentryController.powerUps["Weaken"] && !enemy.affectedBy["Weaken"]) enemy.WeakenEffect(sentryController.powerUpsValues["Weaken"]);
-            if (sentryController.powerUps["Fire"] && !enemy.affectedBy["Fire"]) enemy.FireEffect(sentryController.powerUpsValues["Fire"], 3f, 0.3f);
-            if (sentryController.powerUps["Freeze"] && !enemy.affectedBy["Freeze"]) enemy.FreezeEffect(sentryController.powerUpsValues["Freeze"]);
-            enemyInRay = true;
-            StartCoroutine(DealingDamage(other.gameObject.GetComponent<Health>()));
+            EnemyInTrigger(other);
         }
     }
 
     private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy") enemyInRay = false;
+    }
+
+    public void OnChildTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            EnemyInTrigger(other);
+        }
+    }
+
+    void EnemyInTrigger(Collider other)
+    {
+        Enemy enemy = other.gameObject.GetComponent<Enemy>();
+        if (sentryController.powerUps["SlowDown"] && !enemy.affectedBy["SlowDown"]) enemy.SlowDownEffect(sentryController.powerUpsValues["SlowDown"]);
+        if (sentryController.powerUps["Weaken"] && !enemy.affectedBy["Weaken"]) enemy.WeakenEffect(sentryController.powerUpsValues["Weaken"]);
+        if (sentryController.powerUps["Fire"] && !enemy.affectedBy["Fire"]) enemy.FireEffect(sentryController.powerUpsValues["Fire"], 3f, 0.3f);
+        if (sentryController.powerUps["Freeze"] && !enemy.affectedBy["Freeze"]) enemy.FreezeEffect(sentryController.powerUpsValues["Freeze"]);
+        enemyInRay = true;
+        StartCoroutine(DealingDamage(other.gameObject.GetComponent<Health>()));
+    }
+
+    public void OnChildTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Enemy") enemyInRay = false;
     }
