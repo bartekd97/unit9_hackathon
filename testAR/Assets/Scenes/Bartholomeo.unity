@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da721a1967c19ee41b20cdbff1f96059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  helloARController: {fileID: 0}
 --- !u!1001 &1962545930
 Prefab:
   m_ObjectHideFlags: 0
