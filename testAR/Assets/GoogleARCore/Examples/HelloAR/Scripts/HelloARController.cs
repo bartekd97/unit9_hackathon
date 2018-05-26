@@ -81,12 +81,25 @@ namespace GoogleARCore.Examples.HelloAR
         [SerializeField]
         bool check = false;
         //Pole którym sprawdzamy czy gracz kliknął pierwszy raz, jeżeli tak to kładzie bazę. Jeżeli nie to kładzie jednostkę do obrony
-
-        [SerializeField]
-        int placeMode;
+        
+        public int placeMode;
 
         [SerializeField]
         Image laserCrosshair;
+
+        [SerializeField]
+        bool placeMenu;
+
+        public GameObject spawn;
+
+        public GameObject menu;
+
+        public InputControler inputControler;
+
+        private void Start()
+        {
+            //spawn = DefenseUnitPrefab;
+        }
 
         public void Update()
         {
@@ -118,27 +131,65 @@ namespace GoogleARCore.Examples.HelloAR
             }
 
             // Raycast against the location the player touched to search for planes.
-            TrackableHit hit;
-            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
-                TrackableHitFlags.FeaturePointWithSurfaceNormal;
-
-            switch (placeMode)
+            if (!placeMenu)
             {
-                case 0:
-                    ustawBudynki(raycastFilter);
-                    break;
+                Debug.Log("Dupa");
+                spawn = menu;
+                ustawBudynki(spawn);
+                placeMenu = true;
+                GetComponent<HelloARController>().enabled = false;
+                inputControler.enabled = true;
+                
+ 
+            }
+            else
+            {
 
-                case 1:
-                    laser(raycastFilter);
-                    break;
+
+                switch (placeMode)
+                {
+                    case 0:
+                        if (!check)
+                        {
+                            spawn = AndyAndroidPrefab;
+                            ustawBudynki(spawn);
+                            check = true;
+                        }
+                        else
+                        {
+                            spawn = DefenseUnitPrefab;
+                            ustawBudynki(spawn);
+                        }
+                        break;
+
+                    case 1:
+                        laser();
+                        break;
+                    case 2:
+                        Debug.Log("Dupa");
+                        spawn = menu;
+                        ustawBudynki(spawn);
+                        placeMenu = true;
+                        GetComponent<HelloARController>().enabled = false;
+                        inputControler.enabled = true;
+                        placeMode = 0;
+                        break;
 
 
+                }
             }
         }
 
-        void ustawBudynki(TrackableHitFlags raycastFilter)
+        void setGameObject(GameObject Object)
+        {
+            spawn = Object;
+        }
+
+        void ustawBudynki(GameObject spawn)
         {
             TrackableHit hit;
+            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
+               TrackableHitFlags.FeaturePointWithSurfaceNormal;
             if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
             {
 
@@ -153,11 +204,10 @@ namespace GoogleARCore.Examples.HelloAR
                 else
                 {
                     // Instantiate Andy model at the hit pose.
-                    if (!check)
-                    {
+                    
 
 
-                        var andyObject = Instantiate(AndyAndroidPrefab, hit.Pose.position, hit.Pose.rotation);
+                        var andyObject = Instantiate(spawn, hit.Pose.position, hit.Pose.rotation);
 
                         // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
                         andyObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
@@ -169,26 +219,16 @@ namespace GoogleARCore.Examples.HelloAR
                         // Make Andy model a child of the anchor.
                         andyObject.transform.parent = anchor.transform;
 
-                        check = true;
-                    }
-                    else
-                    {
-                        var defenseUnit = Instantiate(DefenseUnitPrefab, hit.Pose.position, hit.Pose.rotation);
-
-                        defenseUnit.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
-
-                        var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-
-                        defenseUnit.transform.parent = anchor.transform;
-
-                        GetComponent<HelloARController>().enabled = false;
-                    }
+                       
+                    
                 }
             }
         }
 
-        void laser(TrackableHitFlags raycastFilter)
+        void laser()
         {
+            TrackableHitFlags raycastFilter = TrackableHitFlags.PlaneWithinPolygon |
+               TrackableHitFlags.FeaturePointWithSurfaceNormal;
             TrackableHit hit;
             if (Frame.Raycast(Screen.width / 2, Screen.height / 2, raycastFilter, out hit))
             {

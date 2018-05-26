@@ -7,6 +7,10 @@ TagManager:
   - Laser
   - Enemy
   - BitcoinMiner
+  - Canvas
+  - StartButton
+  - Menu
+  - GameManager
   layers:
   - Default
   - TransparentFX
