@@ -10,6 +10,16 @@ public class SentryGunController : MonoBehaviour {
     public float timeout;
     public float timeoutLeft;
     public int level;
+    public GameObject powerUpIndicatorsParent;
+    /*
+        0 freeze
+        1 slowdown
+        2 liquored
+        3 fire
+        4 weaken
+        5 suicide
+    */
+    
 
     public Dictionary<string, bool> powerUps = new Dictionary<string, bool>();
     public Dictionary<string, bool> powerUpsUpgraded = new Dictionary<string, bool>();
@@ -17,7 +27,7 @@ public class SentryGunController : MonoBehaviour {
 
     private bool canShoot;
     private GameObject laserRay;
-	void Start () { 
+	void Start () {
         level = 1;
         canShoot = true;
         powerUps.Add("Freeze", false);
@@ -44,6 +54,11 @@ public class SentryGunController : MonoBehaviour {
         laserRay.GetComponent<LaserRayController>().damage = laserDamage;
         laserRay.SetActive(false);
 
+        for (int i = 0; i < 6; i++)
+        {
+            powerUpIndicatorsParent.transform.GetChild(i).gameObject.SetActive(false);
+        }
+
         if (shotDuration < 0) laserRay.SetActive(true);
 	}
 	
@@ -60,7 +75,31 @@ public class SentryGunController : MonoBehaviour {
             powerUpsUpgraded[powerUpName] = true;
         }
 
-        
+        switch (powerUpName)
+        {
+            case "Freeze":
+                powerUpIndicatorsParent.transform.GetChild(0).gameObject.SetActive(powerUps["Freeze"]);
+                break;
+            case "SlowDown":
+                powerUpIndicatorsParent.transform.GetChild(1).gameObject.SetActive(powerUps["SlowDown"]);
+                break;
+            case "LiquoredUp":
+                powerUpIndicatorsParent.transform.GetChild(2).gameObject.SetActive(powerUps["LiquoredUp"]);
+                break;
+            case "Fire":
+                powerUpIndicatorsParent.transform.GetChild(3).gameObject.SetActive(powerUps["Fire"]);
+                break;
+            case "Weaken":
+                powerUpIndicatorsParent.transform.GetChild(4).gameObject.SetActive(powerUps["Weaken"]);
+                break;
+            case "Suicide":
+                powerUpIndicatorsParent.transform.GetChild(5).gameObject.SetActive(powerUps["Suicide"]);
+                break;
+            default:
+                Debug.Log("SWITCH CASE ERROR");
+                break;
+
+        }
     }
 	void Update () {
         if (Input.GetKeyDown(KeyCode.X) && shotDuration > 0 && canShoot) Shoot();
