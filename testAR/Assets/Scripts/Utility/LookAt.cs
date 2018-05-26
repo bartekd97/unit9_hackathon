@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour {
     public bool isActive;
-    public Transform target;
-	void Update () {
+    public Camera cam;
+
+    private void Start()
+    {
+        cam = Camera.main;
+    }
+    void Update () {
         if (isActive)
-            transform.LookAt(target);
+            transform.LookAt(cam.transform);
 	}
 }

@@ -759,7 +759,7 @@ Transform:
   m_GameObject: {fileID: 1279647367671064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.529, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4165036423640192}
   - {fileID: 4024906625542824}
@@ -836,7 +836,7 @@ Transform:
   m_GameObject: {fileID: 1297390890386268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.401, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4811656839517678}
   - {fileID: 4050368426945224}
@@ -978,7 +978,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: aee2d8cd0acfcbb4698745b5ea798525, type: 3}
+  - {fileID: 2100000, guid: 6a512296b9f1a214d83adb9b4504280f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  target: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &114845034362024818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2371,7 +2371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isActive: 1
-  target: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &114883342078130838
 MonoBehaviour:
   m_ObjectHideFlags: 1
