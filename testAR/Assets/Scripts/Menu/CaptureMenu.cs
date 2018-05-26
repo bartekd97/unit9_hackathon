@@ -120,24 +120,25 @@ public class CaptureMenu : MonoBehaviour {
 
     public void OpenMenu()
     {
-        Debug.Log(Menu);
-        Menu.SetActive(true);
+        MenuOpenManager.Open(Menu);
     }
     public void CloseMenu()
     {
-        Debug.Log(Menu);
-        Menu.SetActive(false);
+        MenuOpenManager.Close(Menu);
     }
     public void ToggleMenu()
     {
         Debug.Log(Menu);
-        Menu.SetActive(!Menu.activeSelf);
+        if (Menu.activeSelf)
+            MenuOpenManager.Close(Menu);
+        else
+            MenuOpenManager.Open(Menu);
     }
     public void DoNextMenu()
     {
         Debug.Log(Menu);
-        Menu.SetActive(false);
-        NextMenu.SetActive(true);
+        MenuOpenManager.Close(Menu);
+        MenuOpenManager.Open(NextMenu);
     }
 
     public void Quit()
