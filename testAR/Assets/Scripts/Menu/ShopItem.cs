@@ -12,6 +12,9 @@ public class ShopItem : MonoBehaviour {
     public MenuIconContainer icon;
 
 	void Update () {
+        if (!GameGlobal.isGameStarted)
+            return;
+
         nameText.text = name;
         priceText.text = "$" + price.ToString();
         if (price > 10000)
@@ -19,4 +22,10 @@ public class ShopItem : MonoBehaviour {
         else
             icon.SetIconType(MenuIconContainer.IconType.Active);
 	}
+
+    public void OnTouchBuy()
+    {
+        Debug.Log( "Kupiono " + name );
+        MenuOpenManager.CloseCurrent();
+    }
 }
