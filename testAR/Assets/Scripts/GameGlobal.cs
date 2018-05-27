@@ -23,8 +23,8 @@ public static class GameGlobal {
     }
 
     public static int enemiesOnTheScene = -1;
-    public static int playerTokens = 0; 
-    public static float bitcoinsCurrency = 1;
+    public static int playerTokens = 0;
+    public static float bitcoinsCurrency = 2;
     public static float usdCurrency = 0;
     public static float bitcoinExchange;
     public static int currentLevel = 1;
