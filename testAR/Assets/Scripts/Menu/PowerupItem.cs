@@ -21,7 +21,7 @@ public class PowerupItem : MonoBehaviour
 
         nameText.text = name;
         priceText.text = "Tokens: " + tokens.ToString();
-        if (tokens > 2)
+        if (tokens > GameGlobal.playerTokens)
             icon.SetIconType(MenuIconContainer.IconType.Disabled);
         else if (false) // tu mozemy zrobic ze jak powerup jest uzyty to go podswietla i blokuje mu klikanie
             icon.SetIconType(MenuIconContainer.IconType.Hover);
@@ -33,11 +33,11 @@ public class PowerupItem : MonoBehaviour
     {
         Debug.Log("Kupiono powerup " + name);
         string powerup = name;
+        GameGlobal.playerTokens -= tokens;
         GameObject sentryParent = gameObject.transform.parent.parent.parent.gameObject;
-        if (GameGlobal.playerTokens >= gameObject.GetComponent<PowerupItem>().tokens)
-        {
-            sentryParent.GetComponent<SentryGunController>().GetPowerUp(powerup);
-        }
+
+        sentryParent.GetComponent<SentryGunController>().GetPowerUp(powerup);
+        
         //MenuOpenManager.currentOpenedMenu; // zminenna oznacza obiekt obecnie otwartego menu
         // w tym przypadku to bedzie menu Powerups w menu dzialka wiec mozna na podstawie tego okreslic obecne dzialko i przyznac powerupa
         MenuOpenManager.CloseCurrent();

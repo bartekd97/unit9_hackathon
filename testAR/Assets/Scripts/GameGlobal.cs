@@ -58,6 +58,11 @@ public static class GameGlobal {
             BTCToUSD(bitcoinExchange, bitcoinsCurrency);
         }
     }
+    public static void RecalculateCash()
+    {
+        BTCToUSD(bitcoinExchange, bitcoinsCurrency);
+        USDToBTC(bitcoinExchange, usdCurrency);
+    }
 
     public static void USDToBTC(float btcExchange, float cash)
     {
