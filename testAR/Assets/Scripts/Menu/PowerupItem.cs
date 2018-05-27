@@ -19,14 +19,23 @@ public class PowerupItem : MonoBehaviour
         //if (!GameGlobal.isGameStarted)
         //  return;
 
-        nameText.text = name;
-        priceText.text = "Tokens: " + tokens.ToString();
-        if (tokens > GameGlobal.playerTokens)
+        if (name == "LiquoredUp")
+        {
+            nameText.text = name;
+            priceText.text = "Soon..";
             icon.SetIconType(MenuIconContainer.IconType.Disabled);
-        else if (false) // tu mozemy zrobic ze jak powerup jest uzyty to go podswietla i blokuje mu klikanie
-            icon.SetIconType(MenuIconContainer.IconType.Hover);
+        }
         else
-            icon.SetIconType(MenuIconContainer.IconType.Active);
+        {
+            nameText.text = name;
+            priceText.text = "Tokens: " + tokens.ToString();
+            if (tokens > GameGlobal.playerTokens)
+                icon.SetIconType(MenuIconContainer.IconType.Disabled);
+            else if (false) // tu mozemy zrobic ze jak powerup jest uzyty to go podswietla i blokuje mu klikanie
+                icon.SetIconType(MenuIconContainer.IconType.Hover);
+            else
+                icon.SetIconType(MenuIconContainer.IconType.Active);
+        }
     }
 
     public void OnTouchBuy()

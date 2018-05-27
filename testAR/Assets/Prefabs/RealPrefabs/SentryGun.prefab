@@ -1372,6 +1372,7 @@ GameObject:
   - component: {fileID: 65882410642873044}
   - component: {fileID: 114329353664987916}
   - component: {fileID: 114269379413736218}
+  - component: {fileID: 114425789474209716}
   m_Layer: 0
   m_Name: SentryGun
   m_TagString: Sentry
@@ -1525,7 +1526,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975022148493692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.599, y: 0.091, z: 1.477}
+  m_LocalPosition: {x: -0.599, y: 0.091, z: -2.17}
   m_LocalScale: {x: 0.02, y: 0.075, z: 0.02}
   m_Children:
   - {fileID: 4816794900819434}
@@ -2762,7 +2763,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shoot
+  m_Text: Upgrade
 --- !u!114 &114075290441807478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2791,8 +2792,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 1
   nameOfClass: UIButton
-  nameOfMethod: TriggerShot
-  sfx: {fileID: 8300000, guid: b92744605455f454abab642df3943b4b, type: 3}
+  nameOfMethod: UpgradeSentry
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114101636788393180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2901,11 +2902,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelDamage: {fileID: 114016165962311618}
-  UpgradePrice: {fileID: 114938308949759196}
+  UpgradePrice: {fileID: 114476859860311570}
   SellValue: {fileID: 114800150673309558}
-  UpgradeIcon: {fileID: 114727827194106554}
-  ShotLeftTime: {fileID: 114476859860311570}
-  ShootIcon: {fileID: 114509888789851026}
+  UpgradeIcon: {fileID: 114509888789851026}
+  ShotLeftTime: {fileID: 0}
+  ShootIcon: {fileID: 0}
 --- !u!114 &114139565950417772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3713,6 +3714,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114425789474209716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975022148493692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a5cf42aff285349b0fedf042e1712d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatable: {fileID: 4265434387839146}
+  minDistanceToShoot: 1.3
+  gun: {fileID: 114329353664987916}
+  addRot: 90
 --- !u!114 &114428389017223050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3992,9 +4008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7847a470d096c74fba62169f9b03b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeIcon: {fileID: 21300000, guid: 66220c5d6861dda4a80f08e03d25bc7e, type: 3}
-  disabledIcon: {fileID: 21300000, guid: 05d746cb082edc4419e56c24811a8bdd, type: 3}
-  hoverIcon: {fileID: 21300000, guid: 24df8f9863286374bb1453a60d1ec805, type: 3}
+  activeIcon: {fileID: 21300000, guid: e8f31ff3de973ca43a626844ae42f690, type: 3}
+  disabledIcon: {fileID: 21300000, guid: d5c3037d5102a6041823f18292aca73f, type: 3}
+  hoverIcon: {fileID: 21300000, guid: 461695331e7688d4db7505b612547306, type: 3}
   image: {fileID: 114430858720196424}
   disableClickOnHover: 0
   interactable: {fileID: 114093909804612676}
@@ -4527,7 +4543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 6
   NextMenu: {fileID: 0}
-  Menu: {fileID: 1561935216943828}
+  Menu: {fileID: 1057556832457078}
   info: {fileID: 0}
   NextScene: 
 --- !u!114 &114704674022966728

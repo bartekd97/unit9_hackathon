@@ -24,6 +24,7 @@ public class LaserTextIconUpdater : MonoBehaviour {
         SellValue.text = "Value: $ " + (Mathf.RoundToInt(GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"]/3)).ToString();
         UpgradeIcon.SetIconType(MenuIconContainer.IconType.Active);
 
+        /*
         ShotLeftTime.text = "";
         if (gameObject.transform.parent.gameObject.GetComponent<SentryGunController>().timeoutLeft > 0)
         {
@@ -35,5 +36,6 @@ public class LaserTextIconUpdater : MonoBehaviour {
             ShootIcon.SetIconType(MenuIconContainer.IconType.Active);
             ShotLeftTime.text = "";
         }
+        */
     }
 }

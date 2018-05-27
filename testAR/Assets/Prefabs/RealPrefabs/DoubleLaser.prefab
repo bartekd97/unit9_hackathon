@@ -1188,6 +1188,7 @@ GameObject:
   - component: {fileID: 65687694018296962}
   - component: {fileID: 114787570649610050}
   - component: {fileID: 114461464590991646}
+  - component: {fileID: 114373919117053858}
   m_Layer: 0
   m_Name: DoubleLaser
   m_TagString: Sentry
@@ -1719,8 +1720,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1699745086186082}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.63, y: 0.121, z: 1.06}
+  m_LocalRotation: {x: -0, y: -0.06663655, z: -0, w: 0.99777734}
+  m_LocalPosition: {x: -0.136, y: 0.121, z: -1.203}
   m_LocalScale: {x: 0.02, y: 0.075, z: 0.02}
   m_Children:
   - {fileID: 4670374447355970}
@@ -1729,7 +1730,7 @@ Transform:
   - {fileID: 4008365899794876}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -7.642, z: 0}
 --- !u!4 &4521518201537442
 Transform:
   m_ObjectHideFlags: 1
@@ -2965,11 +2966,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelDamage: {fileID: 114822399132094008}
-  UpgradePrice: {fileID: 114154806797748992}
+  UpgradePrice: {fileID: 114925462005938720}
   SellValue: {fileID: 114765880328935308}
-  UpgradeIcon: {fileID: 114001623962696842}
-  ShotLeftTime: {fileID: 114925462005938720}
-  ShootIcon: {fileID: 114797970958982058}
+  UpgradeIcon: {fileID: 114797970958982058}
+  ShotLeftTime: {fileID: 0}
+  ShootIcon: {fileID: 0}
 --- !u!114 &114070191190811162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3048,7 +3049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 6
   NextMenu: {fileID: 0}
-  Menu: {fileID: 1546350430928892}
+  Menu: {fileID: 1205939866680096}
   info: {fileID: 0}
   NextScene: 
 --- !u!114 &114090256015805812
@@ -3848,6 +3849,21 @@ MonoBehaviour:
   image: {fileID: 114350822877200814}
   disableClickOnHover: 1
   interactable: {fileID: 114412422554394770}
+--- !u!114 &114373919117053858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699745086186082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a5cf42aff285349b0fedf042e1712d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatable: {fileID: 4520724120665570}
+  minDistanceToShoot: 1.3
+  gun: {fileID: 114787570649610050}
+  addRot: 90
 --- !u!114 &114385933289617138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3953,7 +3969,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shoot
+  m_Text: Upgrade
 --- !u!114 &114434008888515226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5011,8 +5027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 1
   nameOfClass: UIButton
-  nameOfMethod: TriggerShot
-  sfx: {fileID: 8300000, guid: b98126ba0d85df04faa369b3c521071e, type: 3}
+  nameOfMethod: UpgradeSentry
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114797970958982058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5024,9 +5040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7847a470d096c74fba62169f9b03b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeIcon: {fileID: 21300000, guid: 66220c5d6861dda4a80f08e03d25bc7e, type: 3}
-  disabledIcon: {fileID: 21300000, guid: 05d746cb082edc4419e56c24811a8bdd, type: 3}
-  hoverIcon: {fileID: 21300000, guid: 24df8f9863286374bb1453a60d1ec805, type: 3}
+  activeIcon: {fileID: 21300000, guid: e8f31ff3de973ca43a626844ae42f690, type: 3}
+  disabledIcon: {fileID: 21300000, guid: d5c3037d5102a6041823f18292aca73f, type: 3}
+  hoverIcon: {fileID: 21300000, guid: 461695331e7688d4db7505b612547306, type: 3}
   image: {fileID: 114251874023123080}
   disableClickOnHover: 0
   interactable: {fileID: 114796354750036216}
