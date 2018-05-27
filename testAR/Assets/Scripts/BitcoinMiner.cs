@@ -28,10 +28,10 @@ public class BitcoinMiner : MonoBehaviour {
             GameGlobal.bitcoinsCurrency += MinerAmount;
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            GameOver();
-        }
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    GameOver();
+        //}
 	}
 
     public void SetParticlesState(bool active)
