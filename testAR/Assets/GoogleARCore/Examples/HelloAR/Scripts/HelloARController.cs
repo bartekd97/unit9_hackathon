@@ -25,7 +25,7 @@ namespace GoogleARCore.Examples.HelloAR
     using GoogleARCore.Examples.Common;
     using UnityEngine;
     using UnityEngine.UI;
-
+    using System.Collections;
     using System.Reflection;
     using System;
 
@@ -105,7 +105,8 @@ namespace GoogleARCore.Examples.HelloAR
         public Gamemanager gamemanager;
         public GameObject planeGenerator;
         public music Music;
-
+        public GameObject InfoPrefab;
+        public GameObject Reset;
         private void Start()
         {
             GameGlobal.AddCash("btc", 2);
@@ -204,6 +205,8 @@ namespace GoogleARCore.Examples.HelloAR
                         placeMode = 3;
                         ghost = true;
                         Music.StartMusic();
+                        Reset.SetActive(false);
+                        Time();
                         info.text = "Click on base to buy buildings";
                         // inputControler.enabled = true;
                         //placeMode = 4;
@@ -384,6 +387,12 @@ namespace GoogleARCore.Examples.HelloAR
             Application.Quit();
         }
 
+        public IEnumerator Time()
+        {
+            yield return new WaitForSeconds(5f);
+            InfoPrefab.SetActive(false);
+
+        }
         /// <summary>
         /// Show an Android toast message.
         /// </summary>

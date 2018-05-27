@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piotr.unity
     guid: ae33f78718a641f4eb0b1b02af73ff09
+  - enabled: 1
+    path: Assets/Scenes/Test.unity
+    guid: cc170a8d42d355d4eb6ccdf113ec856a
   m_configObjects: {}
