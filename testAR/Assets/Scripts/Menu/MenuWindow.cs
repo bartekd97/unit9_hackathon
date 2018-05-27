@@ -27,7 +27,7 @@ public class MenuWindow : MonoBehaviour {
     private int indicatorCount = 0;
 
     void Start () {
-        UpdatePosition(transform.position);
+        UpdatePosition(transform.localPosition);
         UpdateScale(transform.localScale);
 
         if (isIndicator)
@@ -62,9 +62,9 @@ public class MenuWindow : MonoBehaviour {
 
         transform.localScale = originalScale * currentLevel;
         if (isIndicator)
-            transform.position = originalPos + Vector3.up * C_DOWN_SLIDE * (1f - currentLevel);
+            transform.localPosition = originalPos + Vector3.up * C_DOWN_SLIDE * (1f - currentLevel);
         else
-            transform.position = originalPos - Vector3.up * C_DOWN_SLIDE * (1f - currentLevel);
+            transform.localPosition = originalPos - Vector3.up * C_DOWN_SLIDE * (1f - currentLevel);
 
         if (currentLevel == 0 && toLevel == 0)
             gameObject.SetActive(false);
