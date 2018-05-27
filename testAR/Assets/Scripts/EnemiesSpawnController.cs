@@ -48,6 +48,8 @@ public class EnemiesSpawnController : MonoBehaviour {
 
     public void SpawnEnemy()
     {
+        if (GameGlobal.enemiesOnTheScene >= GameGlobal.MaxEnemiesOnScene)
+            return;
         GameObject enemyPrefab = GetRandomEnemy();
         if (enemyPrefab != null)
         {
