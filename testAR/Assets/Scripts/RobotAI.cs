@@ -23,7 +23,7 @@ public class RobotAI : MonoBehaviour {
     public bool reachedMiner { get {  return _reachedMiner; } }
     public bool forceWait = false;
     public bool keepPathToAction = false;
-
+    public List<string> animationNames;
 
     private Vector3 toPosition;
     private Vector3 movementDirection;
@@ -53,6 +53,17 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
+
+                //animacje
+                ChangeAnimationByBool(true);
+                if(animationNames.Count>0)
+                {
+                    foreach(string s in animationNames)
+                    {
+                        ChangeAnimationByBool(true, s);
+                    }
+                }
+
                 StartCoroutine(DamageDealing());
                 return;
             }
@@ -97,6 +108,11 @@ public class RobotAI : MonoBehaviour {
             }
         }
         //*/
+    }
+
+    public void ChangeAnimationByBool(bool b, string name = "isFighting")
+    {
+        GetComponentInChildren<HandleAnimation>().SetBoolean(name, b);
     }
 
     private void RotateToPoint( Vector3 point)
