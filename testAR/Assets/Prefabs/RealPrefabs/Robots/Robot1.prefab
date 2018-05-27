@@ -8577,7 +8577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frontPoint: {fileID: 4380866402331508}
-  movementSpeed: 0.7
+  movementSpeed: 0.5
   maxDistance: 0.2
   maxDistanceForNewPath: 0.5
   maxFrontSideDistance: 0.25
@@ -8691,7 +8691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  movementSpeed: 0.7
+  movementSpeed: 0.5
   expForKill: 10
 --- !u!114 &114475979240991694
 MonoBehaviour:

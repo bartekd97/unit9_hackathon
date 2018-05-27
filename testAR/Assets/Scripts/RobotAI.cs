@@ -29,8 +29,10 @@ public class RobotAI : MonoBehaviour {
     private Vector3 movementDirection;
     private float _time;
     private float forceWaitSince;
+    private float posY;
     void Start () {
         bitcoinMiner = GameObject.FindGameObjectWithTag("BitcoinMiner");
+        posY = transform.position.y;
         RotateToPoint(bitcoinMiner.transform.position);
         //if (GameGlobal.isGameStarted)
             CalculateMovementDirection();
@@ -74,7 +76,7 @@ public class RobotAI : MonoBehaviour {
         }
 
         
-        Vector3 position = new Vector3(transform.position.x, 0f, transform.position.z);
+        Vector3 position = new Vector3(transform.position.x, posY, transform.position.z);
         position += movementDirection * Time.deltaTime * movementSpeed;
         transform.position = position;
         RotateToPoint(toPosition);

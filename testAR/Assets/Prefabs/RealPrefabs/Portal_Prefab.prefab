@@ -98,4 +98,4 @@ MonoBehaviour:
   enemies:
   - {fileID: 1545514960705396, guid: 89145930ba2efc3489bd4031332ad2e7, type: 2}
   spawnRates: 05000000
-  spawnTime: 10
+  spawnTime: 12
