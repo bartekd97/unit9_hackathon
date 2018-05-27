@@ -765,6 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4297668342909922}
   - component: {fileID: 114778685101703132}
+  - component: {fileID: 114517531183947456}
   m_Layer: 0
   m_Name: DzialoPlaskie
   m_TagString: Untagged
@@ -1491,7 +1492,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4930668893386608}
-  - {fileID: 4789694509864758}
   - {fileID: 4940978260490030}
   m_Father: {fileID: 4297668342909922}
   m_RootOrder: 0
@@ -1531,7 +1531,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629145237256142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.656, y: 0.0148, z: 0.565}
+  m_LocalPosition: {x: -0.684, y: 0.0148, z: -1.645}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4251227451566794}
@@ -1683,12 +1683,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974780167972990}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.48781693, z: 0.3473655}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.29473108, z: 0.48781696}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_Children: []
-  m_Father: {fileID: 4251227451566794}
-  m_RootOrder: 1
+  m_Father: {fileID: 4940978260490030}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4874193937628214
 Transform:
@@ -1743,8 +1743,9 @@ Transform:
   - {fileID: 4874193937628214}
   - {fileID: 4718541571219212}
   - {fileID: 4311479839152358}
+  - {fileID: 4789694509864758}
   m_Father: {fileID: 4251227451566794}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4951774072967880
 Transform:
@@ -3087,9 +3088,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7847a470d096c74fba62169f9b03b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeIcon: {fileID: 21300000, guid: 66220c5d6861dda4a80f08e03d25bc7e, type: 3}
-  disabledIcon: {fileID: 21300000, guid: 05d746cb082edc4419e56c24811a8bdd, type: 3}
-  hoverIcon: {fileID: 21300000, guid: 24df8f9863286374bb1453a60d1ec805, type: 3}
+  activeIcon: {fileID: 21300000, guid: e8f31ff3de973ca43a626844ae42f690, type: 3}
+  disabledIcon: {fileID: 21300000, guid: d5c3037d5102a6041823f18292aca73f, type: 3}
+  hoverIcon: {fileID: 21300000, guid: 461695331e7688d4db7505b612547306, type: 3}
   image: {fileID: 114082273691097538}
   disableClickOnHover: 0
   interactable: {fileID: 114865777335316022}
@@ -3825,6 +3826,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114517531183947456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629145237256142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a5cf42aff285349b0fedf042e1712d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotatable: {fileID: 4940978260490030}
+  minDistanceToShoot: 1.8
+  gun: {fileID: 114608452070811890}
+  addRot: 0
 --- !u!114 &114518567155503656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3909,7 +3925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mode: 6
   NextMenu: {fileID: 0}
-  Menu: {fileID: 1027891837441400}
+  Menu: {fileID: 1184413152942782}
   info: {fileID: 0}
   NextScene: 
 --- !u!114 &114533443728734994
@@ -4212,7 +4228,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shoot
+  m_Text: Upgrade
 --- !u!114 &114634706892499458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4280,11 +4296,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelDamage: {fileID: 114012374730284220}
-  UpgradePrice: {fileID: 114719154782045154}
+  UpgradePrice: {fileID: 114869242185698644}
   SellValue: {fileID: 114634273472074160}
-  UpgradeIcon: {fileID: 114758560383939806}
-  ShotLeftTime: {fileID: 114869242185698644}
-  ShootIcon: {fileID: 114204345464778004}
+  UpgradeIcon: {fileID: 114204345464778004}
+  ShotLeftTime: {fileID: 0}
+  ShootIcon: {fileID: 0}
 --- !u!114 &114659526514932556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4874,8 +4890,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteractable: 1
   nameOfClass: UIButton
-  nameOfMethod: TriggerShot
-  sfx: {fileID: 8300000, guid: 9c70212f5be7efd47a608d43ae155efb, type: 3}
+  nameOfMethod: UpgradeSentry
+  sfx: {fileID: 8300000, guid: 24d39f8c4a7e47048a7cb210e6c80697, type: 3}
 --- !u!114 &114868459343139608
 MonoBehaviour:
   m_ObjectHideFlags: 1
