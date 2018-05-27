@@ -26,7 +26,8 @@ public class ShopItem : MonoBehaviour
 
         nameText.text = name;
         priceText.text = "$" + price.ToString();
-        if (price > 10000)
+        GameGlobal.RecalculateCash();
+        if (price > GameGlobal.usdCurrency)
             icon.SetIconType(MenuIconContainer.IconType.Disabled);
         else
             icon.SetIconType(MenuIconContainer.IconType.Active);
