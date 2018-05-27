@@ -18,7 +18,7 @@ public static class GameGlobal {
     {
         get
         {
-            return GameObject.Find("BitcoinMiner").GetComponent<BitcoinMiner>();//_bitcoinMiner;
+            return GameObject.FindGameObjectWithTag("BitcoinMiner").GetComponent<BitcoinMiner>();//_bitcoinMiner;
         }
     }
 

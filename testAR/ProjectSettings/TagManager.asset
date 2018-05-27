@@ -15,6 +15,7 @@ TagManager:
   - Info
   - PlaceController
   - Closable
+  - BitcoinMinerCollision
   layers:
   - Default
   - TransparentFX
