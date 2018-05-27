@@ -27,5 +27,14 @@ public class ShopProductPreview : MonoBehaviour {
                 transform.Rotate(0, k_ModelRotation, 0, Space.Self);
             }
         }
+
+        Touch touch;
+
+        if (GoogleARCore.InstantPreviewInput.touchCount < 1 || (touch = GoogleARCore.InstantPreviewInput.GetTouch(0)).phase != TouchPhase.Began)
+        {
+            return;
+        }
+
+        Destroy(this);
     }
 }

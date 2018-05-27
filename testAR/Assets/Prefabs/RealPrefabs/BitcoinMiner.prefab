@@ -1773,6 +1773,7 @@ MonoBehaviour:
   priceText: {fileID: 114574258178955618}
   icon: {fileID: 114817630606979944}
   product: {fileID: 0}
+  productPreview: {fileID: 0}
   helloARController: {fileID: 0}
 --- !u!114 &114089002442562394
 MonoBehaviour:
@@ -1790,7 +1791,9 @@ MonoBehaviour:
   nameText: {fileID: 114459232378882106}
   priceText: {fileID: 114646774261188124}
   icon: {fileID: 114510848543845508}
-  product: {fileID: 1400046805672834, guid: af8c8424cb74dce41a111a27e8055f78, type: 2}
+  product: {fileID: 1629145237256142, guid: 4ede9f91d0dcb0e42992f33ff6fb0b3b, type: 2}
+  productPreview: {fileID: 1331688912704274, guid: 299b3f30a07a5404d97523c0ff53cb78,
+    type: 2}
   helloARController: {fileID: 0}
 --- !u!114 &114097633966716404
 MonoBehaviour:
@@ -2053,6 +2056,8 @@ MonoBehaviour:
   priceText: {fileID: 114181200577151462}
   icon: {fileID: 114689272058061494}
   product: {fileID: 1975022148493692, guid: b3c9f51355992b64c9b33a91d54bff14, type: 2}
+  productPreview: {fileID: 1626733177358240, guid: e5334ec2527ea8743bb52961c77eae8f,
+    type: 2}
   helloARController: {fileID: 0}
 --- !u!114 &114283651964216576
 MonoBehaviour:
@@ -3212,6 +3217,8 @@ MonoBehaviour:
   priceText: {fileID: 114908731379085212}
   icon: {fileID: 114489441609240452}
   product: {fileID: 1699745086186082, guid: 10f660813ee2ebd41a83386e8ba741ca, type: 2}
+  productPreview: {fileID: 1425180708345098, guid: 7246cbb2111f8b546a2914fa4e0a723d,
+    type: 2}
   helloARController: {fileID: 0}
 --- !u!120 &120109981741937672
 LineRenderer:
