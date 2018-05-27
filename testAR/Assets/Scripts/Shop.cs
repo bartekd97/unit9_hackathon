@@ -13,7 +13,7 @@ public class Shop : MonoBehaviour {
         prices.Add("WideLaser", 50000);
         prices.Add("BombShooter", 50000);
 
-        prices.Add("SentryLevelUp", 3500);
+        prices.Add("SentryLevelUp", 350);
 	}
 	
     public void Buy(string product)
