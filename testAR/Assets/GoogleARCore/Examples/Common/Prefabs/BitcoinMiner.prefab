@@ -732,7 +732,7 @@ Transform:
   m_GameObject: {fileID: 1395397863458052}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
   m_LocalPosition: {x: 0, y: 0.0742, z: 0}
-  m_LocalScale: {x: 0.02, y: 0.02, z: 0.02}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_Children: []
   m_Father: {fileID: 4131844344184862}
   m_RootOrder: 0
@@ -1289,6 +1289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a811ffcb729c74ea406f5d8c767a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIndicator: 0
+  indicatorMenus: []
+  indicatorCallList: []
 --- !u!114 &114018921486696750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1337,6 +1340,8 @@ MonoBehaviour:
   nameText: {fileID: 114234305726058034}
   priceText: {fileID: 114758075562870732}
   icon: {fileID: 114979446076875120}
+  product: {fileID: 0}
+  helloARController: {fileID: 0}
 --- !u!114 &114112189558984852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1351,6 +1356,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114121461509802928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1448,6 +1454,8 @@ MonoBehaviour:
   nameText: {fileID: 114762652614130048}
   priceText: {fileID: 114587323610461664}
   icon: {fileID: 114249267232704882}
+  product: {fileID: 0}
+  helloARController: {fileID: 0}
 --- !u!114 &114193824203699242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1613,6 +1621,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114308653252794852
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1627,6 +1636,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1279647367671064}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114321262817524402
 MonoBehaviour:
@@ -1801,6 +1811,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1279647367671064}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114478455708082054
 MonoBehaviour:
@@ -1829,6 +1840,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114500833472649376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1873,6 +1885,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114542251490902528
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2008,6 +2021,8 @@ MonoBehaviour:
   nameText: {fileID: 114909668280980680}
   priceText: {fileID: 114269495605347382}
   icon: {fileID: 114974356094259130}
+  product: {fileID: 0}
+  helloARController: {fileID: 0}
 --- !u!114 &114671463134305168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2022,6 +2037,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114678728942083778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2092,6 +2108,8 @@ MonoBehaviour:
   nameText: {fileID: 114790450037331090}
   priceText: {fileID: 114791400129301862}
   icon: {fileID: 114890531423391438}
+  product: {fileID: 0}
+  helloARController: {fileID: 0}
 --- !u!114 &114734387209639800
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2291,6 +2309,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1279647367671064}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114794657776021566
 MonoBehaviour:
@@ -2306,6 +2325,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1279647367671064}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114801013689675696
 MonoBehaviour:
@@ -2318,6 +2338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a811ffcb729c74ea406f5d8c767a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isIndicator: 0
+  indicatorMenus: []
+  indicatorCallList: []
 --- !u!114 &114840907977215990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2345,6 +2368,7 @@ MonoBehaviour:
   mode: 7
   NextMenu: {fileID: 1279647367671064}
   Menu: {fileID: 1297390890386268}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114868720491231614
 MonoBehaviour:
@@ -2389,6 +2413,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: ShopItem
   nameOfMethod: OnTouchBuy
+  sfx: {fileID: 0}
 --- !u!114 &114890531423391438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2480,6 +2505,7 @@ MonoBehaviour:
   mode: 6
   NextMenu: {fileID: 0}
   Menu: {fileID: 1297390890386268}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114932514874748104
 MonoBehaviour:
@@ -2564,6 +2590,7 @@ MonoBehaviour:
   mode: 5
   NextMenu: {fileID: 0}
   Menu: {fileID: 1297390890386268}
+  info: {fileID: 0}
   NextScene: 
 --- !u!114 &114974356094259130
 MonoBehaviour:
@@ -2596,6 +2623,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114979446076875120
 MonoBehaviour:
   m_ObjectHideFlags: 1

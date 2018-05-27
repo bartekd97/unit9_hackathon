@@ -97,7 +97,6 @@ namespace GoogleARCore
         /// <returns>Touch data.</returns>
         public static Touch GetTouch(int index)
         {
-            Debug.Log(touches[index]);
             return touches[index];
         }
 

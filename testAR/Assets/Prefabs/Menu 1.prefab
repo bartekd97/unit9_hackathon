@@ -277,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 1729092682437472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.07, y: 0, z: 0.29}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4714824144071428}
   m_Father: {fileID: 0}
@@ -723,6 +723,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114333149727590836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -801,6 +802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1294e7d5633aaf14593b07c104f92d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!114 &114650312896229078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -839,6 +841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1294e7d5633aaf14593b07c104f92d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!114 &114757797948890584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -898,6 +901,7 @@ MonoBehaviour:
   isInteractable: 1
   nameOfClass: CaptureMenu
   nameOfMethod: Capture
+  sfx: {fileID: 0}
 --- !u!114 &114998838918540464
 MonoBehaviour:
   m_ObjectHideFlags: 1
