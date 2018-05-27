@@ -1126,8 +1126,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4004588826088616}
   - component: {fileID: 114840827325176944}
-  - component: {fileID: 114688766728288474}
   - component: {fileID: 114133321264920570}
+  - component: {fileID: 114893970737268028}
   m_Layer: 0
   m_Name: Robot2 1
   m_TagString: Enemy
@@ -2158,7 +2158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1451924540228362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.611, y: 0, z: -1.181}
+  m_LocalPosition: {x: -0.34634158, y: -0.047, z: -0.024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4804883663399602}
@@ -8967,20 +8967,6 @@ MonoBehaviour:
   ObjectHealth: {fileID: 114133321264920570}
   xOffset: 0.45
   alpha: 0.75
---- !u!114 &114688766728288474
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1451924540228362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f7a231261b75024a826a7dd132fcee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  movementSpeed: 0.5
-  expForKill: 10
 --- !u!114 &114734427430292542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9003,20 +8989,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e895cb97c66dc984b9819c03e667d8d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontPoint: {fileID: 4967941355948076}
+  frontPoint: {fileID: 0}
   movementSpeed: 0.5
   maxDistance: 0.2
   maxDistanceForNewPath: 0.5
   maxFrontSideDistance: 0.25
   forceWaitTimeToNewPath: 0.25
   minimumDistanceForNewPath: 0.4
-  damagePerTick: 1
-  tickTime: 0.4
+  damagePerTick: 0.8
+  tickTime: 0.9
   reachedDestination: 0
   _reachedMiner: 0
   forceWait: 0
   keepPathToAction: 0
   animationNames: []
+--- !u!114 &114893970737268028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451924540228362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7a231261b75024a826a7dd132fcee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.8
+  movementSpeed: 0.5
+  expForKill: 10
 --- !u!222 &222112520618927194
 CanvasRenderer:
   m_ObjectHideFlags: 1
