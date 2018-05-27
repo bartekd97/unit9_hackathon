@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7f1e92619a8b9645b9ea569a5da2f3e
+guid: 34d11498eba61f946a65987082ab3bb4
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -21,7 +21,12 @@ ModelImporter:
     4300004: Dzialo_low
     7400000: Take 001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: 3f77b8eabc23174479ac41e463c00a3c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
