@@ -8,11 +8,18 @@ public class AutoShoot : MonoBehaviour {
     public float minDistanceToShoot = 2f;
     public SentryGunController gun;
     public float addRot = 0f;
+    public AudioClip sfx;
 
+    private AudioSource asource;
     const float CHECK_TICK = 0.5f;
     float lastTime;
 	void Start () {
         lastTime = Time.time;
+        if (sfx)
+        {
+            asource = gameObject.AddComponent<AudioSource>();
+            asource.playOnAwake = true;
+        }
     }
 	
 	void Update () {
@@ -40,6 +47,10 @@ public class AutoShoot : MonoBehaviour {
                     rotatable.rotation = Quaternion.Euler(0, atg * Mathf.Rad2Deg + addRot, 0);
                     gun.Shoot();
                     lastTime = Time.time + 1f;
+                    if (sfx)
+                    {
+                        asource.PlayOneShot(sfx);
+                    }
                 }
             }
         }
