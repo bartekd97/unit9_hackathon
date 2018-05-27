@@ -97,8 +97,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 1894490913828774, guid: 182809aec65d68445884419c461959be, type: 2}
-  spawnRates: 05000000
+  - {fileID: 1049456202486258, guid: 89145930ba2efc3489bd4031332ad2e7, type: 2}
+  - {fileID: 1851558346882596, guid: 5e3620ca637f4f24d8ec0806de608ec6, type: 2}
+  spawnRates: 0600000003000000
+  spawnTime: 5
 --- !u!136 &136291726620806686
 CapsuleCollider:
   m_ObjectHideFlags: 1
