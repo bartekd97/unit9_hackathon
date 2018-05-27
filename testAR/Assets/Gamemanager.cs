@@ -60,7 +60,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         void disableScanning()
         {
-            //info.text = "Now place your menu buttons on floor";
+            info.text = "Now place your menu buttons on floor";
             disableButton();
             detectedPlaneGenerator.enabled = false;
             DetectedPlaneVisualizer[] plane = FindObjectsOfType<DetectedPlaneVisualizer>();

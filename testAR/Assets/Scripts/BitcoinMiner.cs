@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BitcoinMiner : MonoBehaviour {
 
@@ -47,6 +48,7 @@ public class BitcoinMiner : MonoBehaviour {
             GameObject gameOverBitcoins = Instantiate(gameOverMenu, endScreenPos, Camera.main.transform.rotation);
             losed = true;
         }
+        LoadSceneAfterDeath();
 
     }
     public void LeveledUp()
@@ -54,4 +56,9 @@ public class BitcoinMiner : MonoBehaviour {
         if(gameObject.GetComponent<LevelController>().currentLevel > 2) MinerTick /= gameObject.GetComponent<LevelController>().currentLevel - 1;
         MinerTick *= gameObject.GetComponent<LevelController>().currentLevel;
     }
+    public IEnumerator LoadSceneAfterDeath()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
+     }
 }

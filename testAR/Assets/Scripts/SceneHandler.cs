@@ -12,6 +12,6 @@ public class SceneHandler : MonoBehaviour {
     
     public void ReloadScene()
     {
-        LoadScene(SceneManager.GetActiveScene().buildIndex);
+        LoadScene(1);
     }
 }

@@ -44,6 +44,7 @@ public class Health : MonoBehaviour {
             Time.timeScale = 0;
         }
         else Destroy(gameObject);
+
     }
 
     IEnumerator CalculatingHealthDelta()
