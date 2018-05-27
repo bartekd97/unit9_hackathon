@@ -1526,7 +1526,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975022148493692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.599, y: 0.091, z: -2.17}
+  m_LocalPosition: {x: -0.599, y: 0.091, z: 1.477}
   m_LocalScale: {x: 0.02, y: 0.075, z: 0.02}
   m_Children:
   - {fileID: 4816794900819434}
@@ -3729,6 +3729,7 @@ MonoBehaviour:
   minDistanceToShoot: 1.3
   gun: {fileID: 114329353664987916}
   addRot: 90
+  sfx: {fileID: 8300000, guid: b92744605455f454abab642df3943b4b, type: 3}
 --- !u!114 &114428389017223050
 MonoBehaviour:
   m_ObjectHideFlags: 1
