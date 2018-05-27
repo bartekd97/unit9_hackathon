@@ -695,6 +695,7 @@ GameObject:
   - component: {fileID: 4997041489451202}
   - component: {fileID: 114097633966716404}
   - component: {fileID: 114420365191447244}
+  - component: {fileID: 114165621265928822}
   m_Layer: 0
   m_Name: BitcoinMiner
   m_TagString: BitcoinMiner
@@ -1911,6 +1912,20 @@ MonoBehaviour:
   m_Text: 'Level: 1
 
     XP: 20000'
+--- !u!114 &114165621265928822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1694151222336010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9013c0cd4ab19f4881f87abc658c0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.2
+  img: {fileID: 0}
+  b: 0
 --- !u!114 &114181200577151462
 MonoBehaviour:
   m_ObjectHideFlags: 1

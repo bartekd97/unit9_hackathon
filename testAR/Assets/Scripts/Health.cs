@@ -18,6 +18,8 @@ public class Health : MonoBehaviour {
 	
     public void SubtractHealth(float amount)
     {
+        GetComponent<Blink>().ChangeBool();
+
         if (currentHealth <= 0)
             return;
         currentHealth -= amount;
