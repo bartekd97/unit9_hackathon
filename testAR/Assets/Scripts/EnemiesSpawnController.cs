@@ -7,17 +7,28 @@ public class EnemiesSpawnController : MonoBehaviour {
     public List<GameObject> enemies = new List<GameObject>();
     public List<int> spawnRates = new List<int>();
 
+    public float spawnTime = 5f;
+
     private int randomMax;
     private GameObject enemiesParent;
+    private float lastTime;
 	void Start () {
         SetRandomMax();
         enemiesParent = GameObject.Find("Enemies");
+        lastTime = Time.time;
     }
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.S))
         {
+            SpawnEnemy();
+        }
+        */
+        if (Time.time - lastTime >= spawnTime)
+        {
+            lastTime = Time.time;
             SpawnEnemy();
         }
     }

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4399623610874890}
   - component: {fileID: 33274321145482914}
   - component: {fileID: 23341778950807792}
+  - component: {fileID: 114222567219303694}
   m_Layer: 0
   m_Name: Portal_Prefab
   m_TagString: Untagged
@@ -83,3 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1432898603710488}
   m_Mesh: {fileID: 4300000, guid: a648153285ac72e469a11ea127084025, type: 3}
+--- !u!114 &114222567219303694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432898603710488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc13b2656a6cc7e46900b5ebcd7aa9a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 1545514960705396, guid: 89145930ba2efc3489bd4031332ad2e7, type: 2}
+  spawnRates: 05000000
+  spawnTime: 10
