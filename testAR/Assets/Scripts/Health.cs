@@ -13,6 +13,7 @@ public class Health : MonoBehaviour {
 	void Start () {
         currentHealth = maxHealth;
         levelController = GameObject.Find("LevelHandler").GetComponent<LevelController>();
+        StartCoroutine(CalculatingHealthDelta());
 	}
 	
     public void SubtractHealth(float amount)
@@ -47,10 +48,13 @@ public class Health : MonoBehaviour {
 
     IEnumerator CalculatingHealthDelta()
     {
-        float temp = currentHealth;
-        yield return new WaitForSeconds(.4f);
-        deltaHealth = temp - currentHealth;
-        if (baseObject)
-            gameObject.GetComponent<BitcoinMiner>().SetParticlesState(deltaHealth < 0 ? true : false);
+        while (true)
+        {
+            float temp = currentHealth;
+            yield return new WaitForSeconds(.4f);
+            deltaHealth = currentHealth - temp;
+            if (baseObject)
+                gameObject.GetComponent<BitcoinMiner>().SetParticlesState(deltaHealth < 0 ? true : false);
+        }
     }
 }

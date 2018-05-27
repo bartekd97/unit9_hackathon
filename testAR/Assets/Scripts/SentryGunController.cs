@@ -110,8 +110,10 @@ public class SentryGunController : MonoBehaviour {
     }
     public void UpgradeSelf()
     {
+        GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"] *= 1.3f;
+        GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"] = Mathf.RoundToInt(GameObject.Find("Shop").GetComponent<Shop>().prices["SentryLevelUp"]);
         level++;
-        laserDamage += 3;
+        laserDamage += 1.2f;
     }
     IEnumerator Timeout(float time)
     {
