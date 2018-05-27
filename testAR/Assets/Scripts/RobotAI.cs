@@ -32,7 +32,7 @@ public class RobotAI : MonoBehaviour {
     private float posY;
     void Start () {
         bitcoinMiner = GameObject.FindGameObjectWithTag("BitcoinMiner");
-        posY = transform.position.y;
+        posY = transform.position.y;//bitcoinMiner.transform.position.y;
         RotateToPoint(bitcoinMiner.transform.position);
         //if (GameGlobal.isGameStarted)
             CalculateMovementDirection();
@@ -54,6 +54,7 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
+                gameObject.GetComponent<Health>().currentHealth = 20;
                 StartCoroutine(DamageDealing());
                 return;
             }
