@@ -24,14 +24,22 @@ public class ShopItem : MonoBehaviour
     {
         //if (!GameGlobal.isGameStarted)
         //  return;
-
-        nameText.text = name;
-        priceText.text = "$" + price.ToString();
-        GameGlobal.RecalculateCash();
-        if (price > GameGlobal.usdCurrency)
+        if (name == "Cannon")
+        {
+            nameText.text = "Coming soon";
+            priceText.text = "";
             icon.SetIconType(MenuIconContainer.IconType.Disabled);
+        }
         else
-            icon.SetIconType(MenuIconContainer.IconType.Active);
+        {
+            nameText.text = name;
+            priceText.text = "$" + price.ToString();
+            GameGlobal.RecalculateCash();
+            if (price > GameGlobal.usdCurrency)
+                icon.SetIconType(MenuIconContainer.IconType.Disabled);
+            else
+                icon.SetIconType(MenuIconContainer.IconType.Active);
+        }
     }
 
     public void OnTouchBuy()

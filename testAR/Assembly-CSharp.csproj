@@ -253,6 +253,7 @@
     <Compile Include="Assets\Scripts\SpawnTeleports.cs" />
     <Compile Include="Assets\Scripts\UIButton.cs" />
     <Compile Include="Assets\Scripts\Utility\LookAt.cs" />
+    <Compile Include="Assets\Scripts\Utility\StartupRotate.cs" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
