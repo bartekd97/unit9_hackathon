@@ -1186,6 +1186,7 @@ GameObject:
   - component: {fileID: 23489210044041218}
   - component: {fileID: 65687694018296962}
   - component: {fileID: 114787570649610050}
+  - component: {fileID: 114461464590991646}
   m_Layer: 0
   m_Name: DoubleLaser
   m_TagString: Sentry
@@ -3999,6 +4000,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &114461464590991646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1699745086186082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6158c1b2f7b37b49888a6e653bf87f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotate: {x: 0, y: -90, z: 0}
 --- !u!114 &114470940386578188
 MonoBehaviour:
   m_ObjectHideFlags: 1

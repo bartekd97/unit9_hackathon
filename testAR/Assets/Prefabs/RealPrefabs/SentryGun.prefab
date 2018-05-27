@@ -1371,6 +1371,7 @@ GameObject:
   - component: {fileID: 23431342899654944}
   - component: {fileID: 65882410642873044}
   - component: {fileID: 114329353664987916}
+  - component: {fileID: 114269379413736218}
   m_Layer: 0
   m_Name: SentryGun
   m_TagString: Sentry
@@ -3248,6 +3249,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114269379413736218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975022148493692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6158c1b2f7b37b49888a6e653bf87f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotate: {x: 0, y: -90, z: 0}
 --- !u!114 &114278004496020778
 MonoBehaviour:
   m_ObjectHideFlags: 1

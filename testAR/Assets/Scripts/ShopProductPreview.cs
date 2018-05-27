@@ -4,7 +4,7 @@ using UnityEngine;
 using GoogleARCore;
 public class ShopProductPreview : MonoBehaviour {
     private Camera FirstPersonCamera;
-    private const float k_ModelRotation = 180.0f;
+    private const float k_ModelRotation = 90.0f;
     private void Start()
     {
         FirstPersonCamera = Camera.main;

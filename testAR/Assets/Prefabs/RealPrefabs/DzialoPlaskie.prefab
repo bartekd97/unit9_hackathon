@@ -764,6 +764,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4297668342909922}
+  - component: {fileID: 114778685101703132}
   m_Layer: 0
   m_Name: DzialoPlaskie
   m_TagString: Untagged
@@ -4623,6 +4624,18 @@ MonoBehaviour:
   nameText: {fileID: 114341619992690238}
   priceText: {fileID: 114253685671050778}
   icon: {fileID: 114306554605113144}
+--- !u!114 &114778685101703132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1629145237256142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6158c1b2f7b37b49888a6e653bf87f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotate: {x: 0, y: -90, z: 0}
 --- !u!114 &114780823284832868
 MonoBehaviour:
   m_ObjectHideFlags: 1
