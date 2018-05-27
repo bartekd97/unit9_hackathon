@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 33914519572316324}
   - component: {fileID: 23761105187437938}
   - component: {fileID: 136012459545593772}
+  - component: {fileID: 114312758083077990}
   m_Layer: 0
   m_Name: LaserR2
   m_TagString: Laser
@@ -1376,6 +1377,7 @@ GameObject:
   - component: {fileID: 33927066535458540}
   - component: {fileID: 23310060798584294}
   - component: {fileID: 136734007020904340}
+  - component: {fileID: 114240728137578172}
   m_Layer: 0
   m_Name: LaserR1
   m_TagString: Laser
@@ -3492,6 +3494,17 @@ MonoBehaviour:
   Menu: {fileID: 1546350430928892}
   info: {fileID: 0}
   NextScene: 
+--- !u!114 &114240728137578172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1919112859929548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acc42aa534b51f4dbd465af359e6a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114251874023123080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3632,6 +3645,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114312758083077990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1232654583121388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acc42aa534b51f4dbd465af359e6a15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114317312445544564
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,7 +12,7 @@ public class Health : MonoBehaviour {
     private LevelController levelController;
 	void Start () {
         currentHealth = maxHealth;
-       // levelController = GameObject.Find("LevelHandler").GetComponent<LevelController>();
+        levelController = GameObject.Find("LevelHandler").GetComponent<LevelController>();
 	}
 	
     public void SubtractHealth(float amount)

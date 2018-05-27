@@ -1550,6 +1550,7 @@ GameObject:
   - component: {fileID: 33552541290090264}
   - component: {fileID: 23861110071644796}
   - component: {fileID: 65313388873448962}
+  - component: {fileID: 54748179129642362}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Enemy
@@ -3362,8 +3363,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1702777207764160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0745, z: 0.0104}
-  m_LocalScale: {x: 0.13, y: 0.14, z: 0.16}
+  m_LocalPosition: {x: 0, y: 0.084, z: 0.0104}
+  m_LocalScale: {x: 0.13, y: 0.16, z: 0.16}
   m_Children: []
   m_Father: {fileID: 4787631368104034}
   m_RootOrder: 2
@@ -3544,7 +3545,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545514960705396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7576213, y: -4.8088846, z: -5.7675014}
+  m_LocalPosition: {x: -0.004, y: 0, z: -2.196}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4485618047917930}
@@ -8536,6 +8537,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1103586440908732}
   m_Mesh: {fileID: 4300120, guid: de120dd332b37fc4a8c266d4f0681401, type: 3}
+--- !u!54 &54748179129642362
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1702777207764160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65313388873448962
 BoxCollider:
   m_ObjectHideFlags: 1

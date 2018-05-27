@@ -44,7 +44,7 @@ public class LaserRayController : MonoBehaviour {
         if (sentryController.powerUps["Fire"] && !enemy.affectedBy["Fire"]) enemy.FireEffect(sentryController.powerUpsValues["Fire"], 3f, 0.3f);
         if (sentryController.powerUps["Freeze"] && !enemy.affectedBy["Freeze"]) enemy.FreezeEffect(sentryController.powerUpsValues["Freeze"]);
         enemyInRay = true;
-        StartCoroutine(DealingDamage(other.gameObject.GetComponent<Health>()));
+        StartCoroutine(DealingDamage(other.gameObject.GetComponentInParent<Health>()));
     }
 
     public void OnChildTriggerExit(Collider other)

@@ -216,6 +216,7 @@
     <Compile Include="Assets\music.cs" />
     <Compile Include="Assets\PeerPlay\Ripple Water\_scripts\CollisionScript.cs" />
     <Compile Include="Assets\Prefabs\Robot1\DebugClick.cs" />
+    <Compile Include="Assets\Prefabs\Robot1\HandleAnimation.cs" />
     <Compile Include="Assets\Scripts\BitcoinCurrencyDisplay.cs" />
     <Compile Include="Assets\Scripts\BitcoinDisplay.cs" />
     <Compile Include="Assets\Scripts\BitcoinMiner.cs" />
