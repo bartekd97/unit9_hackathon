@@ -8,7 +8,6 @@ public class Health : MonoBehaviour {
     public float currentHealth;
     public bool baseObject;
 
-    private float deltaHP;
     private LevelController levelController;
 	void Start () {
         currentHealth = maxHealth;
@@ -40,24 +39,5 @@ public class Health : MonoBehaviour {
             //Show losing screen, reset game or something
         }
         else Destroy(gameObject);
-    }
-
-    IEnumerator CalculatingDeltaHP()
-    {
-        float tempHP = currentHealth;
-        yield return new WaitForSeconds(.3f);
-        deltaHP = currentHealth - tempHP;
-
-        if (baseObject)
-        {
-            if (deltaHP >= 0)
-            {
-                gameObject.GetComponent<BitcoinMiner>().SetParticlesState(false);
-            }
-            else
-            {
-                gameObject.GetComponent<BitcoinMiner>().SetParticlesState(false);
-            }
-        }
     }
 }

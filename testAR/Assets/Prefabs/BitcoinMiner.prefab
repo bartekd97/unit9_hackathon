@@ -975,7 +975,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1713481808900262}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.191133, y: -5.233639, z: 7.6614347}
+  m_LocalPosition: {x: 0, y: 0, z: -2.562}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 4355960002944962}
@@ -1903,7 +1903,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinerTick: 0.6
   MinerAmount: 1
-  sparksParticles: {fileID: 1236517045318278}
 --- !u!114 &114170237073653884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1938,7 +1937,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HealthImage: {fileID: 114819165383281248}
   HealthRect: {fileID: 224971995439490096}
-  ObjectHealth: {fileID: 0}
+  ObjectHealth: {fileID: 114912531889761072}
   xOffset: 0.45
   alpha: 0.75
 --- !u!114 &114219720301334288
