@@ -1132,7 +1132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1694151222336010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.562}
+  m_LocalPosition: {x: -0.7158998, y: -4.9525023, z: -6.6298585}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
   - {fileID: 4305476914402524}
@@ -1808,6 +1808,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinerTick: 0.6
   MinerAmount: 1
+  gameOverMenu: {fileID: 1558971102315144, guid: 3edf323719f418546b39dc4263383b6e,
+    type: 2}
+  sparks: {fileID: 1787037078896304}
 --- !u!114 &114107651452735064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2207,6 +2210,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   baseObject: 1
+  deltaHealth: 0
 --- !u!114 &114426096956395062
 MonoBehaviour:
   m_ObjectHideFlags: 1

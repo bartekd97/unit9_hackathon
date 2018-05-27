@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 65366962323010564}
   - component: {fileID: 114254060248815704}
   - component: {fileID: 114764704808636758}
+  - component: {fileID: 114567061264699538}
   - component: {fileID: 114651608617582706}
   m_Layer: 0
   m_Name: btc
@@ -179,7 +180,7 @@ Transform:
   m_GameObject: {fileID: 1532130714111818}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.011, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 0.12}
   m_Children:
   - {fileID: 224649029341829116}
   m_Father: {fileID: 4435257740616084}
@@ -192,7 +193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1558971102315144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.103, y: 0, z: 0.8234}
+  m_LocalPosition: {x: -0.82342577, y: -8.2176285, z: -16.022354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224751479217774848}
@@ -425,6 +426,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114567061264699538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532130714111818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ba8a45a45e0ba488cce502a4c8467d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114651608617582706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -496,9 +508,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff696f976b3d1d4e9b13901d1cd41a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isInteractable: 0
-  nameOfClass: 
-  nameOfMethod: 
+  isInteractable: 1
+  nameOfClass: SceneHandler
+  nameOfMethod: ReloadScene
+  sfx: {fileID: 0}
 --- !u!114 &114774005565172248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -763,6 +776,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.352}
+  m_AnchoredPosition: {x: 0, y: 0.3092}
   m_SizeDelta: {x: 3, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
