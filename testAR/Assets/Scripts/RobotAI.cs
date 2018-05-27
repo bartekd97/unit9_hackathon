@@ -15,7 +15,7 @@ public class RobotAI : MonoBehaviour {
     public float damagePerTick;
     public float tickTime;
 
-    private GameObject bitcoinMiner;
+    public GameObject bitcoinMiner;
     private const float C_RAYCAST_REFRESH_TIME = 0.25f; // 4 razy na sekunde
 
     public bool reachedDestination = false;
@@ -39,7 +39,8 @@ public class RobotAI : MonoBehaviour {
         _time = Time.time;
         forceWaitSince = Time.time;
     }
-	
+
+    float _meleeDamageTimer = 0f;
     private void MeleeDamage()
     {
         GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
@@ -49,10 +50,12 @@ public class RobotAI : MonoBehaviour {
         //if (!GameGlobal.isGameStarted || _reachedMiner)
         if (_reachedMiner)
         {
-            if (Time.time - _time >= tickTime)
+            _meleeDamageTimer += Time.deltaTime;
+            Debug.Log(_meleeDamageTimer);
+            if (_meleeDamageTimer >= tickTime)
             {
                 MeleeDamage();
-                _time = Time.time;
+                _meleeDamageTimer = 0f;
             }
             return;
         }
@@ -67,7 +70,7 @@ public class RobotAI : MonoBehaviour {
                 _reachedMiner = true;
                 //StartCoroutine(DamageDealing());
                 MeleeDamage();
-                _time = Time.time;
+                _meleeDamageTimer = 0f;
                 return;
             }
         }
