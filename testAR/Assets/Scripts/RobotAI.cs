@@ -54,7 +54,6 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
-                gameObject.GetComponent<Health>().currentHealth = 20;
                 StartCoroutine(DamageDealing());
                 return;
             }
@@ -227,7 +226,8 @@ public class RobotAI : MonoBehaviour {
     {
         while (_reachedMiner)
         {
-            GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
+            foreach( GameObject go in GameObject.FindGameObjectsWithTag("BitcoinMiner"))
+                go.GetComponent<Health>().SubtractHealth(damagePerTick);
             yield return new WaitForSeconds(tickTime);
         }
     }
