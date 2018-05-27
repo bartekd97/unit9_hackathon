@@ -104,6 +104,7 @@ namespace GoogleARCore.Examples.HelloAR
 
         public Gamemanager gamemanager;
         public GameObject planeGenerator;
+        public music Music;
 
         private void Start()
         {
@@ -202,6 +203,7 @@ namespace GoogleARCore.Examples.HelloAR
                         planeGenerator.GetComponent<SpawnTeleports>().StartSpawning();
                         placeMode = 3;
                         ghost = true;
+                        Music.StartMusic();
                         info.text = "Click on base to buy buildings";
                         // inputControler.enabled = true;
                         //placeMode = 4;
