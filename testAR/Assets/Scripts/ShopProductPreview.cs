@@ -30,7 +30,7 @@ public class ShopProductPreview : MonoBehaviour {
 
         Touch touch;
 
-        if (GoogleARCore.InstantPreviewInput.touchCount < 1 || (touch = GoogleARCore.InstantPreviewInput.GetTouch(0)).phase != TouchPhase.Began)
+        if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
         {
             return;
         }
