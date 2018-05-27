@@ -40,11 +40,22 @@ public class RobotAI : MonoBehaviour {
         forceWaitSince = Time.time;
     }
 	
+    private void MeleeDamage()
+    {
+        GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
+    }
 
-	void Update () {
+    void Update() {
         //if (!GameGlobal.isGameStarted || _reachedMiner)
-        if ( _reachedMiner)
+        if (_reachedMiner)
+        {
+            if (Time.time - _time >= tickTime)
+            {
+                MeleeDamage();
+                _time = Time.time;
+            }
             return;
+        }
         float distance = (frontPoint.position - toPosition).magnitude;
         if (distance < maxDistance)
         {
@@ -54,7 +65,9 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
-                StartCoroutine(DamageDealing());
+                //StartCoroutine(DamageDealing());
+                MeleeDamage();
+                _time = Time.time;
                 return;
             }
         }
@@ -222,13 +235,15 @@ public class RobotAI : MonoBehaviour {
         }
         return false;
     }
+    /*
     IEnumerator DamageDealing()
     {
         while (_reachedMiner)
         {
             foreach( GameObject go in GameObject.FindGameObjectsWithTag("BitcoinMiner"))
-                go.GetComponent<Health>().SubtractHealth(damagePerTick);
+            GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
             yield return new WaitForSeconds(tickTime);
         }
     }
+    */
 }

@@ -22,6 +22,8 @@ public static class GameGlobal {
         }
     }
 
+    public static int MaxEnemiesOnScene = 5;
+
     public static int enemiesOnTheScene = -1;
     public static int playerTokens = 0;
     public static float bitcoinsCurrency = 2;
