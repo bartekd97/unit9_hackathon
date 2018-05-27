@@ -8,12 +8,13 @@ public class LevelController : MonoBehaviour {
     private int neededExperience = 50;
     public int experience;
 	void Start () {
-		
+        currentLevel = 1;
 	}
     public void AddExperience(int amount)
     {
         experience += amount;
-        if(experience - neededExperience > 0)
+        GameGlobal.totalExperience += amount;
+        if(experience - neededExperience >= 0)
         {
             LevelUp();
         }
@@ -26,8 +27,10 @@ public class LevelController : MonoBehaviour {
     {
         experience -= neededExperience;
         currentLevel++;
+        GameGlobal.currentExperience = experience;
         neededExperience = Mathf.RoundToInt((float)neededExperience * 1.23f);
         GameGlobal.playerTokens++;
+        GameGlobal.currentLevel = currentLevel;
         if(gameObject.tag == "BitcoinMiner")
         {
             gameObject.GetComponent<BitcoinMiner>().LeveledUp();

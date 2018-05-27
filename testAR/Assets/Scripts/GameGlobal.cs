@@ -31,6 +31,7 @@ public static class GameGlobal {
     public static float bitcoinExchange;
     public static int currentLevel = 1;
     public static int totalExperience = 0;
+    public static int currentExperience = 0;
     #endregion
     public static void AddCash(string currency, float amount)
     {

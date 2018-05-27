@@ -1843,8 +1843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a41723ebe6bdc4b41a0d62989654ccae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinerTick: 0.6
-  MinerAmount: 1
+  MinerTick: 5
+  MinerAmount: 0.01
   gameOverMenu: {fileID: 1558971102315144, guid: 3edf323719f418546b39dc4263383b6e,
     type: 2}
   sparks: {fileID: 1787037078896304}
