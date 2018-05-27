@@ -28,10 +28,7 @@ namespace GoogleARCore.Examples.HelloAR
         }
 
         // Update is called once per frame
-        void Update()
-        {
-
-        }
+        
 
         void findButons()
         {
@@ -54,11 +51,17 @@ namespace GoogleARCore.Examples.HelloAR
             helloARController.placeMode = 0;
         }
 
+        public void disableButton()
+        {
+            stopScanTerrainObject.SetActive(false);
+        }
+
 
 
         void disableScanning()
         {
             //info.text = "Now place your menu buttons on floor";
+            disableButton();
             detectedPlaneGenerator.enabled = false;
             DetectedPlaneVisualizer[] plane = FindObjectsOfType<DetectedPlaneVisualizer>();
             for (int i = 0; i < plane.Length; i++)

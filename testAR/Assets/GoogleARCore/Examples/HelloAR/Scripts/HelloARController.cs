@@ -102,6 +102,9 @@ namespace GoogleARCore.Examples.HelloAR
 
         public bool ghost = false;
 
+        public Gamemanager gamemanager;
+        public GameObject planeGenerator;
+
         private void Start()
         {
             GameGlobal.AddCash("btc", 2);
@@ -158,8 +161,6 @@ namespace GoogleARCore.Examples.HelloAR
 
         public void Update()
         {
-            
-
             _UpdateApplicationLifecycle();
             //PlaceGhostObject();
             // Hide snackbar when currently tracking at least one plane.
@@ -173,22 +174,24 @@ namespace GoogleARCore.Examples.HelloAR
                     break;
                 }
             }
+            /*
             if (placeMode == 1)
                 laserCrosshair.enabled = true;
             else
                 laserCrosshair.enabled = false;
-
+                */
             SearchingForPlaneUI.SetActive(showSearchingUI);
-            tekst.text = placeMode.ToString();
-            
+            tekst.text = Input.GetTouch(0).ToString();
+
             // If the player has not touched the screen, we are done with this update.
             Touch touch;
-            if ((touch = Input.GetTouch(0)).phase != TouchPhase.Began)
+            
+            if (Input.touchCount < 1 || (touch = Input.GetTouch(0)).phase != TouchPhase.Began)
             {
                 return;
             }
-            else
-            {
+            
+            
              // Raycast against the location the player touched to search for planes.
                 
                 switch (placeMode)
@@ -196,6 +199,7 @@ namespace GoogleARCore.Examples.HelloAR
                     case 0:
                         spawn = AndyAndroidPrefab;
                         ustawBudynki(spawn);
+                        planeGenerator.GetComponent<SpawnTeleports>().StartSpawning();
                         placeMode = 3;
                         ghost = true;
                         info.text = "Click on base to buy buildings";
@@ -212,6 +216,7 @@ namespace GoogleARCore.Examples.HelloAR
                         spawn = menu;
                         ustawBudynki(spawn);
                         placeMode = 3;
+                        gamemanager.disableButton();
                         info.text = "Now choose your game mode";
                         //spaceForMenu.GetComponent<CaptureMenu>().SetText("Choose any place for menu");
                         //ustawianie menu
@@ -227,7 +232,7 @@ namespace GoogleARCore.Examples.HelloAR
                         //ustawianie obrony
                         break;
                 }
-            }
+            
         }
 
         
