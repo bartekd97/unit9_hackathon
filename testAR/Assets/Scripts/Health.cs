@@ -7,6 +7,7 @@ public class Health : MonoBehaviour {
     public float maxHealth;
     public float currentHealth;
     public bool baseObject;
+    public float deltaHealth;
 
     private LevelController levelController;
 	void Start () {
@@ -37,7 +38,19 @@ public class Health : MonoBehaviour {
         if (baseObject)
         {
             //Show losing screen, reset game or something
+            gameObject.GetComponent<BitcoinMiner>().SetParticlesState(false);
+            gameObject.GetComponent<BitcoinMiner>().GameOver();
+            Time.timeScale = 0;
         }
         else Destroy(gameObject);
+    }
+
+    IEnumerator CalculatingHealthDelta()
+    {
+        float temp = currentHealth;
+        yield return new WaitForSeconds(.4f);
+        deltaHealth = temp - currentHealth;
+        if (baseObject)
+            gameObject.GetComponent<BitcoinMiner>().SetParticlesState(deltaHealth < 0 ? true : false);
     }
 }
