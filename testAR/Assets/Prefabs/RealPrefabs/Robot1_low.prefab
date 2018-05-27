@@ -1037,8 +1037,24 @@ GameObject:
   - component: {fileID: 4141306162624904}
   - component: {fileID: 95021658374294806}
   - component: {fileID: 114617247843234622}
+  - component: {fileID: 114627142812187626}
   m_Layer: 0
   m_Name: Robot1_low
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1464326434147246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4751883244960194}
+  m_Layer: 0
+  m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2116,7 +2132,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457219479352630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.117, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4263727543046200}
@@ -2224,6 +2240,7 @@ Transform:
   - {fileID: 4074923533696776}
   - {fileID: 4963140663581084}
   - {fileID: 4708644200210530}
+  - {fileID: 4751883244960194}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3159,6 +3176,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4141306162624904}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4751883244960194
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1464326434147246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4141306162624904}
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4754232194195670
 Transform:
@@ -8362,3 +8392,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728b69f6450c12340ac7991a1a2f6015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114627142812187626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457219479352630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e895cb97c66dc984b9819c03e667d8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontPoint: {fileID: 4751883244960194}
+  movementSpeed: 2
+  maxDistance: 2
+  maxDistanceForNewPath: 4
+  maxFrontSideDistance: 2
+  forceWaitTimeToNewPath: 2
+  minimumDistanceForNewPath: 4
+  damagePerTick: 0
+  tickTime: 0
+  reachedDestination: 0
+  _reachedMiner: 0
+  forceWait: 0
+  keepPathToAction: 0

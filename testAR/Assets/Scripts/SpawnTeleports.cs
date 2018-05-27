@@ -52,7 +52,7 @@ public class SpawnTeleports : MonoBehaviour
 
             if (computer != null && checkMiner)
             {
-                if (Vector3.Distance(destination, computer.transform.position) < 2 && Vector3.Distance(destination, computer.transform.position) > -2)
+                if (Vector3.Distance(destination, computer.transform.position) < 4f && Vector3.Distance(destination, computer.transform.position) > -4f)
                 {
                     continue;
                 }
@@ -62,7 +62,7 @@ public class SpawnTeleports : MonoBehaviour
             {
                 foreach (GameObject GO in AllSpawnedTeleports)
                 {
-                    if (Vector3.Distance(GO.transform.position, destination) < 2f && Vector3.Distance(GO.transform.position, destination) > -2f)
+                    if (Vector3.Distance(GO.transform.position, destination) < 1.5f && Vector3.Distance(GO.transform.position, destination) > -1.5f)
                     {
                         spawn = false;
                         continue;
