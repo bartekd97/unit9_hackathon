@@ -35,6 +35,6 @@ public class ShopProductPreview : MonoBehaviour {
             return;
         }
 
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
