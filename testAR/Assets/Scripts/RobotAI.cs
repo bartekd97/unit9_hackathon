@@ -15,7 +15,7 @@ public class RobotAI : MonoBehaviour {
     public float damagePerTick;
     public float tickTime;
 
-    public GameObject bitcoinMiner;
+    private GameObject bitcoinMiner;
     private const float C_RAYCAST_REFRESH_TIME = 0.25f; // 4 razy na sekunde
 
     public bool reachedDestination = false;
@@ -40,25 +40,10 @@ public class RobotAI : MonoBehaviour {
         forceWaitSince = Time.time;
     }
 
-    float _meleeDamageTimer = 0f;
-    private void MeleeDamage()
-    {
-        GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
-    }
-
     void Update() {
         //if (!GameGlobal.isGameStarted || _reachedMiner)
         if (_reachedMiner)
-        {
-            _meleeDamageTimer += Time.deltaTime;
-            Debug.Log(_meleeDamageTimer);
-            if (_meleeDamageTimer >= tickTime)
-            {
-                MeleeDamage();
-                _meleeDamageTimer = 0f;
-            }
             return;
-        }
         float distance = (frontPoint.position - toPosition).magnitude;
         if (distance < maxDistance)
         {
@@ -68,9 +53,7 @@ public class RobotAI : MonoBehaviour {
             else
             {
                 _reachedMiner = true;
-                //StartCoroutine(DamageDealing());
-                MeleeDamage();
-                _meleeDamageTimer = 0f;
+                StartCoroutine(DamageDealing());
                 return;
             }
         }
@@ -155,7 +138,7 @@ public class RobotAI : MonoBehaviour {
         wasHit = Physics.Raycast(frontPoint.position, movementDirection, out hit);
         if (wasHit)
         {
-            if (hit.transform.gameObject.CompareTag("BitcoinMiner"))
+            if (hit.transform.gameObject.CompareTag("BitcoinMinerCollision"))
             {
                 toPosition = hit.point;
                 movementDirection = (toPosition - frontPoint.position).normalized;
@@ -238,15 +221,13 @@ public class RobotAI : MonoBehaviour {
         }
         return false;
     }
-    /*
+
     IEnumerator DamageDealing()
     {
         while (_reachedMiner)
         {
-            foreach( GameObject go in GameObject.FindGameObjectsWithTag("BitcoinMiner"))
-            GameGlobal.bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
+            bitcoinMiner.gameObject.GetComponent<Health>().SubtractHealth(damagePerTick);
             yield return new WaitForSeconds(tickTime);
         }
     }
-    */
 }
